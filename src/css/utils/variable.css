@@ -1,0 +1,41 @@
+:root {
+
+/* Color styles */
+--bleu: rgba(18, 112, 152, 1);
+--couleur-interfacecontact: rgba(177, 177, 177, 1);
+--gri-foncé: rgba(85, 85, 85, 1);
+--noir: rgba(0, 0, 0, 1);
+--blanc: rgba(249, 249, 249, 1);
+
+/* Text-size styles */
+/* base size: 1-rem (16px) */
+--tweet_soustitre_acceuil: 1.12rem;
+--titre_pages: 2.5rem;
+--bouton-menu: 1.75rem;
+--1-rem: 1rem;
+--acceuil--tagline: 1.12rem;
+--acceuil---soustitre: 2.19rem;
+--acceuil--intro_articletweet_article: 0.88rem;
+--footer--texte: 0.78rem;
+--footer--bouton: 0.94rem;
+--galerie--bouton: 0.94rem;
+--galerie--description: 1.19rem;
+--galerie--titre: 1.56rem;
+--galerie---tweet---description: 0.94rem;
+--galerie---tweet---titre: 1.25rem;
+--frise---date: 0.69rem;
+--frise--epoque: 0.69rem;
+--glossaire---def-mots: 0.88rem;
+--glossaire--lettre: 0.94rem;
+--article---titre: 1.81rem;
+--article--intro: 0.94rem;
+--article--soustitre: 1.12rem;
+--article--texte: 0.88rem;
+--article--autres-articles: 0.75rem;
+--autre-projet---titre-projet: 1.25rem;
+--autre-projet---nom: 0.88rem;
+
+}
+
+
+
