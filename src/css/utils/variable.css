@@ -8,8 +8,8 @@
 --blanc: rgba(249, 249, 249, 1);
 
 /* Police de caractére */
---font-main: 'Lato', normal; 
-
+--font-main: 'Lato', sans-serif;
+ 
 
 /* base size: 1-rem (16px) */
 --tweet_soustitre_acceuil: 1.12rem;

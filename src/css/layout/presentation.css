@@ -1,0 +1,22 @@
+
+
+
+
+.presentation__title strong {
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Effet de surlignement sur le texte */
+.presentation__title strong {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  z-index: -1;
+  background-color: var(--bleu);
+}

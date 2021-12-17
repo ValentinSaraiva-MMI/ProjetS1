@@ -7,36 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>Olympe</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
         <nav>
-            <a href="#"><img src="assets/icones/Langues/FR.svg"
-                    alt="icones de changement de langue en position Francaise"></a>
-            <a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg" alt="Icone de menu déroulant"></a>
+            <button>
+                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+            <button><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+                        alt="Icone de menu déroulant"></a> </button>
         </nav>
 
 
 
-        <img src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="85">
-        <h3 class="hero_subtitle">Évolution du féminisme de ses prémices à l’air du numérique</h3>
+        <div class="hero">
+            <img src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="85">
     </header>
 
+    <div class="hero__tagline">
+        <h3 class="presentation__title"><strong>Évolution du féminisme de ses prémices à l’air du numérique</strong>
+        </h3>
+    </div>
 
 
-    <p>Depuis l’omniprésence des réseaux sociaux dans notre société, le féminisme s’est construit une réputation
-        de
-        moins en moins recommandable.
-        Mais il convient de rappeler que le
-        mouvement ne lutte que pour l’égalité et la création d’un monde plus juste pour toutes et pour tous.
+
+
+    <p class="hero__intro">Depuis l’omniprésence des réseaux sociaux dans notre société, le féminisme s’est
+        construit une réputation de moins en moins recommandable.
+        Mais il convient de rappeler que le mouvement ne lutte que pour l’égalité et la création d’un monde plus
+        juste pour toutes et pour tous.
         Olympe.com vous invite à enfin redonner une chance au féminisme en découvrant comment, à travers le
         monde et
         les époques, les femmes se sont battues pour obtenir leurs droits légitime.</p>
 
-
+    </div>
 
 
 
