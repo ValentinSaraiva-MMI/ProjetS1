@@ -38,8 +38,14 @@
 --autre-projet---titre-projet: 1.25rem;
 --autre-projet---nom: 0.88rem;
 
+
+
+    /* Espaces */
+--space1x: 3px;
+--space2x: 8px;
+--space3x: 16px;
+--space4x: 24px;
+--space5x: 48px;
+--space6x: 80px;
+
 }
-
-
-  /* Espaces */
-

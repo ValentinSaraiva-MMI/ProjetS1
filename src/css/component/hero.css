@@ -1,3 +1,4 @@
+
 .hero__subtitle{
     font-family: var(--font-main);
 
@@ -8,6 +9,12 @@
 font-family: var(--font-main);
 white-space: normal;
 font-style: var(--acceuil--intro_articletweet_article);
+text-align: start;
+margin: var(--space1x);
+
+
+
+
 }
 
 
@@ -17,5 +24,9 @@ font-style: var(--acceuil--intro_articletweet_article);
     font-family: var(--font-main);
     font-size: var(--acceuil--tagline);
     font-style: italic;
+    text-align: center;
     
 }
+
+
+

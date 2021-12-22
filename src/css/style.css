@@ -11,11 +11,13 @@
 @import url("base/icons.css");
 
 
+/*component */ 
+@import url("component/hero.css");   
+@import url("component/icones.css"); 
 
-@import url("component/hero.css");
+/*layout*/ 
+ @import url("layout/presentation.css"); 
 
-
- /* @import url("layout/presentation.css"); */ 
-
+ /*utils*/
 @import url("utils/variable.css");
 

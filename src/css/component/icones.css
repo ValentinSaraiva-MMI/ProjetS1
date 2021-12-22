@@ -1,0 +1,38 @@
+
+.article__arrow{
+position: absolute;
+width: 63px;
+height: 25px;
+left: 288px;
+top: 815px;
+}
+
+
+/*Fleche indiquant la galerie sur la page d'acceuil*/
+.article__arrow_galerie
+ { z-index: 2;
+transform: matrix(-0.96, 0.22, -0.27, -0.97, 0, 0);
+position: absolute;
+left: 19.82%;
+right: 53.35%;
+top: 111.5em;
+bottom: 10.41%;
+
+width: 20%;
+}
+
+
+/*Fleche indiquant la frise sur la page d'acceuil*/
+.article__arrow_Frise 
+{ z-index: 2;
+transform: matrix(1, -0.01, -0.01, -1, 0, 0);
+position: absolute;
+left: 39.82%;
+right: 43.35%;
+top: 129em;
+bottom: 10.41%;
+width: 25%;
+}
+
+
+
