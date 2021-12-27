@@ -15,19 +15,20 @@
 
     <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
         :class="{ 'header--atTop' : !atTop }">
-        <nav>
-            <button>
+
+        <nav class="header__menu">
+            <button class="button__header__EN">
                 <a href="#"><img src="assets/icones/Langues/EN.svg"
                         alt="icones de changement de langue en position Francaise"></a>
             </button>
-            <button><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
                         alt="Icone de menu déroulant"></a> </button>
         </nav>
 
 
 
-        <div class="hero">
-            <img src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="85">
+        <div>
+            <img class="hero__logo" src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="95">
     </header>
 
     <div class="hero__tagline">
@@ -124,9 +125,6 @@
             <p class="footer__texte">pédagogique au département MMI de</p>
             <p class="footer__texte__bottom"> Montbéliard.</p>
         </div>
-
-
-
 
     </footer>
 

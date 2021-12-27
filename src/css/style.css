@@ -18,6 +18,7 @@
 /*layout*/ 
  @import url("layout/presentation.css"); 
  @import url("layout/footer.css");
+ @import url("layout/article.css");
  
 
  /*utils*/

@@ -13,31 +13,42 @@
 <body>
 
     <header>
-        <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
-        <a href="#"><img src="assets/icones/Langues/FR.svg"
-                alt="icones de changement de langue en position Francaise"></a>
-        <a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg" alt="Icone de menu déroulant"></a>
+        <div class="logo__simple">
+            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
+                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+        </div>
+
+        <nav class="header__menu">
+            <button class="button__header__EN">
+                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+                        alt="Icone de menu déroulant"></a> </button>
+        </nav>
 
 
 
-        <h1>Une histoire du féminisme</h1>
-        <p>Le féminisme est un mouvement luttant contre les inégalités sexistes.
-            De par sa constante évolution et adaptation , il arbore de nombreux visages selon les pays et les époques.
-            Il conserve néanmoins les mêmes objectifs.
-            L’espérance d’un futur plus juste dans les relations homme/femmes.</p>
+        <h1 class="titre__article">Une histoire du féminisme</h1>
+        <div class="deco__title__article1"></div>
+        <p class="text__italic  ">Le féminisme est un mouvement luttant contre les inégalités sexistes.</p>
+        <p class="text__italic "> De par sa constante évolution et adaptation , il arbore de nombreux visages
+            selon les
+            pays et les époques.
+        <p class="text__italic ">Il conserve néanmoins les mêmes objectifs.</p>
+        <p class="text__italic "> L’espérance d’un futur plus juste dans les relations homme/femmes.</p>
 
     </header>
 
 
     <main>
 
-        <h2>Les débuts discutés du féminisme</h2>
+        <h2 class="undertitle__article">Les débuts discutés du féminisme</h2>
         <p>De nombreuses dates dans l’Histoire sont susceptible d’être considérées comme LE marqueur de naissance à la
             lutte contre les discrimination sexistes, désigné par la suite comme mouvement féministe.
         </p>
 
-        <ul>
+        <ul class="normal">
             <li>1791 : Publication de la « Déclaration des Droits de la Femme et de la Citoyenne » par Olympe de gouges.
             </li>
             <li>1830: Création attribué du mots « féminisme » au penseur Français Charles Fourrier, afin de mettre un
@@ -47,11 +58,12 @@
             <li>1837 : Entré du mot « féminisme » dans le dictionnaire français.</li>
         </ul>
 
-        <p>Mais si son commencement n’est pas fixé précisément dans l’Histoire, cela n'empêchera en rien au féminisme de
+        <p class="article-text">Mais si son commencement n’est pas fixé précisément dans l’Histoire, cela n'empêchera en
+            rien au féminisme de
             devenir un des combats les plus défendus et suivies de l’Histoire. En réussissant à réunir une multitude de
             causes sous une même bannière.</p>
 
-        <h2>L’organisation d’un mouvement mondial</h2>
+        <h2 class="undertitle__article">L’organisation d’un mouvement mondial</h2>
         <p>Malgré les nombreuses facettes de ce mouvement d’envergure international, il est possible de retracer à
             travers les décennies les grands axes de l’histoire du féminisme.</p>
 
@@ -129,22 +141,23 @@
 
     </main>
 
-    <footer>
-        <article>
-            <nav>
-                <ul>
-                    <li><a href="contact_FR.html">Contact</a></li>
-                    <li><a href="autreprojets_FR.html">Autres projets</a></li>
-                    <li><a href="apropos_FR.html">À propos</a></li>
-                    <li><img src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard"></li>
-                    <li>
-                        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
-                    </li>
-                </ul>
-            </nav>
+    <footer class="footer__space">
 
+        <article class="footer__menu">
+            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
         </article>
 
+
+        <div class="mentionlegale">
+
+            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+            <div class="footer__mentionlegale__deco"> </div>
+            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+            <p class="footer__texte">pédagogique au département MMI de</p>
+            <p class="footer__texte__bottom"> Montbéliard.</p>
+        </div>
 
     </footer>
 

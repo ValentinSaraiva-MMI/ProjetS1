@@ -1,0 +1,52 @@
+.titre__article {
+    font-family: var(--font-main__bold);
+    font-size: var(--article---titre);
+    color: var(--noir);
+    font-weight: 900;
+    
+}
+
+.deco__title__article1 {
+position: absolute;
+width: 340px;
+height: 13px;
+left: 7px;
+top: 137px;
+background: rgba(58, 146, 184, 0.88);
+z-index: -1;
+}
+
+.text__italic {
+    font-family: var(--font-main);
+    font-size:var(--article--texte);
+    margin: 0.2em;
+    font-style: italic;
+}
+
+.undertitle__article {
+    font-family: var(--font-main);
+    font-size:var(--article--soustitre);
+    font-weight: 900;
+}
+
+
+.article-text {
+     font-family: var(--font-main);
+    font-size:var(--article--texte);
+}
+
+ul.normal{
+     font-family: var(--font-main);
+    font-size:var(--article--texte);
+    
+} 
+li {
+    margin-left: -25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/*Définit les puces des listes à puces */
+li::marker {
+    color: var(--bleu);
+}

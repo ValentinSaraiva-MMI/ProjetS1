@@ -9,6 +9,10 @@
 }
 
 
+
+
+
+
 /* Effet de surlignement sur le texte */
 .presentation__title strong::before{
   
@@ -34,7 +38,7 @@
 position: absolute;
 left: 3px;
 right: 98.32%;
-top: 270px;
+top: 210px;
 bottom: 0;
 height: 200px;
 width: 6px;

@@ -4,7 +4,7 @@ position: absolute;
 width: 63px;
 height: 25px;
 left: 288px;
-top: 815px;
+top: 756px;
 }
 
 
@@ -15,7 +15,7 @@ transform: matrix(-0.96, 0.22, -0.27, -0.97, 0, 0);
 position: absolute;
 left: 19.82%;
 right: 53.35%;
-top: 111.5em;
+top: 108em;
 bottom: 10.41%;
 
 width: 20%;
@@ -29,7 +29,7 @@ transform: matrix(1, -0.01, -0.01, -1, 0, 0);
 position: absolute;
 left: 39.82%;
 right: 43.35%;
-top: 129em;
+top: 124em;
 bottom: 10.41%;
 width: 25%;
 }
@@ -39,8 +39,8 @@ width: 25%;
 
 .button__footer
   {
-      font-size: var(--footer--bouton);
-     background-color: var(--blanc);
+  font-size: var(--footer--bouton);
+  background-color: var(--blanc);
 box-sizing:border-box;
 border: 2.5px solid var(--bleu); 
 border-radius: 15px;
@@ -48,3 +48,38 @@ border-radius: 15px;
   margin-right:auto;
   }
 
+
+  .button__header__menu,
+  .button__header__EN {
+background-color: white;
+border: white;
+color: white;
+  }
+
+
+.button__header__EN {
+position: absolute;
+width: 53px;
+height: 30.59px;
+left: 270px;
+top: 29px;
+
+  }
+
+.button__header__menu {
+position: absolute;
+width: 50px;
+height: 50px;
+left: 312px;
+top: 26px;
+  }
+
+
+.logo__simple {
+position: relative;
+width: 78.52px;
+height: 86px;
+left: 5px;
+top: 22px;
+
+  }
