@@ -17,6 +17,8 @@
 
 /*layout*/ 
  @import url("layout/presentation.css"); 
+ @import url("layout/footer.css");
+ 
 
  /*utils*/
 @import url("utils/variable.css");

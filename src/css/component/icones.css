@@ -36,3 +36,15 @@ width: 25%;
 
 
 
+
+.button__footer
+  {
+      font-size: var(--footer--bouton);
+     background-color: var(--blanc);
+box-sizing:border-box;
+border: 2.5px solid var(--bleu); 
+border-radius: 15px;
+ margin-left: 24px;
+  margin-right:auto;
+  }
+

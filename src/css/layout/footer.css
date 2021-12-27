@@ -1,0 +1,70 @@
+
+.footer__space   /*Permet un espace entre le footer et le contene principale de la page*/
+{ 
+margin-top: 14px;
+
+}
+
+.footer__menu   /*Design lien à l'intérieur du footer*/
+a:link {
+  text-decoration: none;
+  text-decoration-color: var(--noir);
+}
+   
+
+.footer__link {
+  color: var(--noir);
+  text-decoration: none;
+  font-size: var(--footer--bouton);
+  font-family:var(--font-main);
+}
+
+
+.footer__img {
+  position: relative;
+ left: 24px;
+margin-top: var(--space4x);
+}
+
+
+
+
+
+
+.footer__mentionlegale__deco {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #127098;
+  border-radius: 20px;
+  width : 275px;
+  height : 59px;
+  position: relative;
+  left: 85px;
+  top: -3rem;
+}
+
+
+
+.footer__texte__bottom,
+.footer__texte,
+.footer__texte__top {
+   /* color: var(--blanc);*/
+  position: relative;
+  left: 88px;
+  top: -7.5rem;
+  text-align: start;
+  margin-left: 5px;
+  color: var(--blanc);
+
+}
+
+.footer__texte {
+  margin-top: -3px;
+}
+
+.footer__texte__top {
+  padding-top:-1px;
+  margin-bottom: 0px;
+} 
+
+.footer__texte__bottom {
+  margin-top: -16px;
+}
