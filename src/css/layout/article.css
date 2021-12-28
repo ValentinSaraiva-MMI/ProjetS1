@@ -19,22 +19,31 @@ z-index: -1;
 .text__italic {
     font-family: var(--font-main);
     font-size:var(--article--texte);
-    margin: 0.2em;
+    margin: 0.1em;
     font-style: italic;
 }
+
+
 
 .undertitle__article {
     font-family: var(--font-main);
     font-size:var(--article--soustitre);
     font-weight: 900;
+    margin-top: 20px;
+    margin-bottom:-8px ;
 }
 
 
 .article-text {
-     font-family: var(--font-main);
+    font-family: var(--font-main);
     font-size:var(--article--texte);
 }
 
+.other__articles {
+    font-family: var(--font-main);
+    font-size:var(--article--autres-articles);
+}
+ 
 ul.normal{
      font-family: var(--font-main);
     font-size:var(--article--texte);
@@ -50,3 +59,91 @@ li {
 li::marker {
     color: var(--bleu);
 }
+
+figcaption {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 11px;
+}
+
+
+.fleche__article__footer 
+ { 
+z-index: 2;
+transform: matrix(-0.96, 0.22, -0.27, -0.97, 0, 0);
+position: relative;
+left: 0x;
+bottom: 22px;
+width: 20%;
+transform: rotate(180.5deg);
+}
+
+/*Définit l'espace entre la section "autres articles" et l'article */
+.other__article__space {
+    padding-top: 42px;
+}
+
+.deco__otherarticle__article1 {
+    z-index: -1;
+    position: absolute;
+    width: 94.83px;
+    height: 5.35px;
+    left: 9px;
+    top: 2673.7px;
+    /* Bleu */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #127098;
+}
+ 
+.articles__otherarticle__design { 
+font-family: var(--font-main);
+font-size:var(--article--texte);
+color: var(--noir);
+}
+
+
+
+.other__article__footer /*Supprime le design p)ar défaut des liens à l'interieur de la section "autres articles"*/
+a:link {
+  text-decoration: none;
+  
+}
+
+.color__a__article {
+    color: var(--noir);
+    font-weight: 800;
+}
+   
+
+.design__link__otherarticle {
+   font-family: var(--font-main);
+   font-size: var(--article--autres-articles);
+   color: var(--noir);
+  text-decoration: none;
+}
+
+
+.other__article__space__arrow{
+    margin-top: -20px;
+}
+
+
+
+.other__article__footer{
+    position: relative;
+top: -18px; left: 25px;
+}
+
+.article__deco__li__footer{
+    z-index: 2;
+    position: relative;
+width: 8px;
+height: 8px;
+left: -40px;
+top: 20px;
+background: #127098;
+}
+
+/*
+position: relative;
+left: 0x;
+bottom: 22px; */

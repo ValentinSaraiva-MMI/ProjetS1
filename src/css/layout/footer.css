@@ -27,10 +27,6 @@ margin-top: var(--space4x);
 }
 
 
-
-
-
-
 .footer__mentionlegale__deco {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #127098;
   border-radius: 20px;
@@ -40,7 +36,6 @@ margin-top: var(--space4x);
   left: 85px;
   top: -3rem;
 }
-
 
 
 .footer__texte__bottom,
