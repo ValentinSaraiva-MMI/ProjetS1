@@ -16,6 +16,52 @@ background: rgba(58, 146, 184, 0.88);
 z-index: -1;
 }
 
+
+.deco__title__article2_A {
+    z-index: -1;
+position: absolute;
+width: 194px;
+height: 13px;
+left: 6px;
+top: 135px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+
+.deco__title__article2_B {
+z-index: -1;
+position: absolute;
+width: 335px;
+height: 13px;
+left: 14px;
+top: 171px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+
+.deco__title__article2_C {
+z-index: -1;
+position: absolute;
+width: 120px;
+height: 13px;
+left: 4px;
+top: 206px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .text__italic {
     font-family: var(--font-main);
     font-size:var(--article--texte);
@@ -37,6 +83,7 @@ z-index: -1;
 .article-text {
     font-family: var(--font-main);
     font-size:var(--article--texte);
+
 }
 
 .other__articles {
@@ -64,6 +111,7 @@ figcaption {
     text-align: center;
     font-family: var(--font-main);
     font-size: 11px;
+    
 }
 
 
@@ -83,17 +131,30 @@ transform: rotate(180.5deg);
     padding-top: 42px;
 }
 
+.deco__otherarticle__article2,
 .deco__otherarticle__article1 {
     z-index: -1;
-    position: absolute;
     width: 94.83px;
     height: 5.35px;
-    left: 9px;
-    top: 2673.7px;
     /* Bleu */
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #127098;
 }
- 
+
+
+.deco__otherarticle__article1   {
+    position: absolute;
+    left: 9px;
+    top: 2673.7px;
+}
+
+
+.deco__otherarticle__article2 {
+position: absolute;
+left: 9px;
+top: 3041px;
+}
+
+
 .articles__otherarticle__design { 
 font-family: var(--font-main);
 font-size:var(--article--texte);
@@ -143,7 +204,53 @@ top: 20px;
 background: #127098;
 }
 
-/*
+.fleche__article__ada{
+    width: 44px;
+height: 44px;
 position: relative;
-left: 0x;
-bottom: 22px; */
+left: 270px;
+top: -5px;
+transform: rotate(1deg);
+}
+
+.article__invitation__galerie{
+    font-family: var(--font-main);
+   font-size: 12px;
+   font-weight: 700;
+   font-style: italic;
+   position: absolute;
+    left: 280px;
+    top: 1045px;
+}
+
+.article__deco__invitation__galerie {
+    z-index: -1;
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    left: 284px;
+    top: 1074px;
+    /* Bleu */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)), #127098;
+}
+
+
+.article__image__Ada,
+.article__image__Margaret{
+display: block;
+    margin-left: auto;
+    margin-right: auto 
+
+}
+
+.article__image__Margaret{
+    width: 220.23px;
+    height: 402px; }
+
+.article__image__Ada{
+  width: 339px;
+height: 299px;
+
+
+}
