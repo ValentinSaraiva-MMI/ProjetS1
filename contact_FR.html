@@ -6,73 +6,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout/apropos.css">
+    <link rel="stylesheet" href="src/css/component/captcha.css">
     <title>contact_FR</title>
 </head>
 
 <body>
-
     <header>
-        <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
-        <a href="#"><img src="assets/icones/Langues/FR.svg"
-                alt="icones de changement de langue en position Francaise"></a>
-        <a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg" alt="Icone de menu déroulant"></a>
+        <div class="logo__simple">
+            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
+                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+        </div>
 
-        <h1>Contact</h1>
-        <p> Si vous avez des questions, où que vous souhaitez nous faire part de votre avis, le formulaire ci- dessous
-            vous permet de nous contacter.</p>
-        <img src="assets/Img/Fleche.webp" alt="Fleche indiquand le formulaire de contact">
+        <nav class="header__menu">
+            <button class="button__header__EN">
+                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+                        alt="Icone de menu déroulant"></a> </button>
+        </nav>
     </header>
 
 
-    <p>Nom/prénom</p>
+    <h1>Contact</h1>
+    <div class="deco__title__A "></div>
+    <div class="deco__title__B1"></div>
+    <div class="deco__title__C1"></div>
+    <div class="margin__negative__D "></div>
+    <p class="p__contact"> Si vous avez des questions, où que vous souhaitez nous faire part de votre avis, le
+        formulaire ci- dessous
+        vous permet de nous contacter.</p>
+    <img class="arrow__contact" src="assets/Img/Arrow 2.png" alt="Fleche indiquand le formulaire de contact">
+    <div class="margin__negative__B "></div>
+
+
+
+    <p class="p__categorie__contact">Nom/ Prénom</p>
     <label for="nom"></label>
     <textarea id="nom" name="nom" rows="1" cols="48">Ex: Ulfrique Baptiste
         </textarea>
     <br>
 
-    <p>Email</p>
+    <p class="p__categorie__contact">Email</p>
     <label for="email"></label>
-    <textarea id="email" name="email" rows="1" cols="48">ulfrbaptisite42@gmail.com
+    <textarea id="email" name="email" rows="1" cols="48">Ex: baptisteulf424@gmail.com
         </textarea>
     <br>
 
-    <p>Objet</p>
+    <p class="p__categorie__contact">Objet</p>
     <label for="objet"></label>
-    <textarea id="objet" name="objet" rows="1" cols="48">Bug à fixer
+    <textarea id="objet" name="objet" rows="1" cols="48">Ex: Bug à fixer
         </textarea>
     <br>
 
 
-    <p>Message</p>
+    <p class="p__categorie__contact">Message</p>
     <label for="Message"></label>
     <textarea id="Message" name="Message" rows="5" cols="48">
 
         </textarea>
     <br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <button>Envoyer</button>
 
 
 
-    <footer>
-        <article>
-            <nav>
-                <ul>
-                    <li><a href="contact_FR.html">Contact</a></li>
-                    <li><a href="autreprojets_FR.html">Autres projets</a></li>
-                    <li><a href="apropos_FR.html">À propos</a></li>
-                    <li><img src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard"></li>
-                    <li>
-                        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
-                    </li>
-                </ul>
-            </nav>
+    <footer class="footer__space">
+
+        <article class="footer__menu">
+            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
         </article>
 
 
-    </footer>
+        <div class="mentionlegale">
 
+            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+            <div class="footer__mentionlegale__deco"> </div>
+            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+            <p class="footer__texte">pédagogique au département MMI de</p>
+            <p class="footer__texte__bottom"> Montbéliard.</p>
+        </div>
+
+    </footer>
 
 
 

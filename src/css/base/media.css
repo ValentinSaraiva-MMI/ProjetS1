@@ -10,3 +10,43 @@ figcaption {
     font-size: var(--text-sm);
     color: var(--gray-600);
 }
+
+
+.margin1 {
+    margin: 1em;
+}
+
+.margin2 {
+    margin: 2.8em;
+}
+
+.margin__negativeA {
+    margin: -1em;
+}
+
+.margin__negative__B {
+    margin: -3em;
+}
+
+.margin__negative__C {
+    margin: -5em;
+}
+
+
+.margin__negative__D {
+    margin: -6.8em;
+}
+
+
+.Apropos__photo {
+    position: relative;
+left: 5.36%;
+right: 7.59%;
+
+
+Width: 195px;
+Height: 335,21px;
+background: url(IMG_5907.jpg);
+border: 3px solid #127098;
+}
+

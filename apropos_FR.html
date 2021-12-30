@@ -7,24 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout/apropos.css">
     <title>apropos</title>
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
-        <a href="#"><img src="assets/icones/Langues/FR.svg"
-                alt="icones de changement de langue en position Francaise"></a>
-        <a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg" alt="Icone de menu déroulant"></a>
+        <div class="logo__simple">
+            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
+                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+        </div>
 
-        <h1>À propos</h1>
-
+        <nav class="header__menu">
+            <button class="button__header__EN">
+                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+                        alt="Icone de menu déroulant"></a> </button>
+        </nav>
     </header>
 
-    <article>
 
+    <h1>À propos</h1>
+    <div class="deco__title__A "></div>
+    <div class="deco__title__B"></div>
+    <div class="deco__title__C"></div>
+    <div class="margin__negative__C "></div>
+    <article>
         <p>Ce site à été réalisé dans le cadre d’un projet pédagogique , de
             réalisation de site web au BUT MMI de Montbéliard. </p>
 
@@ -40,31 +51,46 @@
         <p> Nous vous remercions de votre visite et espère vous y revoir bientôt. </p>
 
         <p> Cordialement. </p>
-
     </article>
 
 
     <figure>
-        <img src="assets/Img/Rectangle138.webp" alt="Photo de Valentin Saraiva, chef de projet du site Olympe.com. ">
-        <figcaption>Valentin Saraiva,Chef de projet. </figcaption>
+        <div class="deco__photo__A "></div>
+        <div class="deco__photo__B"></div>
+        <div class="deco__photo__C"></div>
+        <div class="deco__photo__D"></div>
+        <img class="Apropos__photo" src="assets/Img/valentin.webp"
+            alt="Photo de Valentin Saraiva, chef de projet du site Olympe.com. ">
+        <figcaption>Valentin Saraiva,Chef de projet</figcaption>
     </figure>
+    <img class="arrow__apropos" src="assets/Img/Arrow 2.png">
 
-    <footer>
-        <article>
-            <nav>
-                <ul>
-                    <li><a href="contact_FR.html">Contact</a></li>
-                    <li><a href="autreprojets_FR.html">Autres projets</a></li>
-                    <li><a href="apropos_FR.html">À propos</a></li>
-                    <li><img src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard"></li>
-                    <li>
-                        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
-                    </li>
-                </ul>
-            </nav>
 
+    <a href="https://www.linkedin.com/in/valentin-saraiva-238151224/"><img class="logo__linkedin"
+            src="assets/Img/linkedin.webp" alt="Logo de linkedin"></a>
+    <div class="deco__logo__linkedin_A"></div>
+    <div class="deco__logo__linkedin_B"></div>
+
+    <div class="margin2"></div>
+
+
+    <footer class="footer__space">
+
+        <article class="footer__menu">
+            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
         </article>
 
+
+        <div class="mentionlegale">
+
+            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+            <div class="footer__mentionlegale__deco"> </div>
+            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+            <p class="footer__texte">pédagogique au département MMI de</p>
+            <p class="footer__texte__bottom"> Montbéliard.</p>
+        </div>
 
     </footer>
 

@@ -1,0 +1,196 @@
+/*CSS dédié aux pages html "à propos" et "contact"*/
+
+
+/*Pense bete => Optimiser le code */ 
+
+
+h1 {
+    font-family: var(--font-main);
+    font-size: var(--titre_pages);
+    position: relative;
+    left: 94px;
+    top: -63px;
+    margin-bottom: -20px;
+}
+
+.deco__title__A {
+    position: relative;
+width: 5px;
+height: 36px;
+left:  84px;
+top: -83px;
+background: #127098;
+}
+
+
+.deco__title__B {
+position: relative;
+width: 4px;
+height: 14px;
+left: 244px;
+top: -88px;
+background: #127098;
+transform: rotate(-90deg);
+}
+
+.deco__title__B1 {
+position: relative;
+width: 4px;
+height: 14px;
+left: 228px;
+top: -88px;
+background: #127098;
+transform: rotate(-90deg);
+}
+
+                    
+
+.deco__title__C {
+    position: relative;
+width: 4px;
+height: 14px;
+left: 260px;
+top: -113px;
+background: #127098;
+}
+
+
+
+.deco__title__C1 {
+    position: relative;
+width: 4px;
+height: 14px;
+left: 240px;
+top: -113px;
+background: #127098;
+}
+
+
+
+
+p { font-family: var(--font-main);
+    font-size: var(16px);
+     margin-left: 43px;
+   font-weight: 500;
+}
+
+P.p__contact {
+     font-weight: 700;
+box-sizing: content-box;
+width: 70%;
+}
+
+
+
+figcaption {
+
+margin-left: -122px;
+font-weight: 600;
+font-size: 14px;
+}
+
+
+.deco__photo__A {
+Width:10px;
+Height:43px;
+position: relative;
+left: 58.31%;
+top: 10px;
+background: #127098;
+transform: rotate(90deg);
+}
+
+
+.deco__photo__B {
+    position: absolute;
+height: 43px;
+width: 10px;
+left: 235px;
+top: 613px;
+background: #127098;
+}
+
+
+.deco__photo__C {
+    Width:8px;
+    Height:34px;
+    position: absolute;
+    left: 10.31%;
+    top: 977px;
+    background: #127098;
+    transform: rotate(90deg);
+}
+
+.deco__photo__D {
+    Width:8px;
+    Height:43px;
+    position: absolute;
+    right: 94.21%;
+    bottom: -170.65px;
+    background: #127098;
+}
+
+
+
+.deco__logo__linkedin_A,
+.deco__logo__linkedin_B{
+    z-index: -1;
+    background: #127098;
+    transform: rotate(90deg);
+     Width:6px;
+    Height:28px;
+}
+
+
+.deco__logo__linkedin_A{
+position: absolute;
+left: 273px;
+top: 969px;    
+}
+
+.deco__logo__linkedin_B{
+position: absolute;
+left: 265px;
+top: 1000px;
+}
+
+.arrow__apropos {
+position: absolute;
+width: 37.2px;
+height: 43px;
+left: 210.88px;
+top: 985.11px;
+transform: rotate(110.66deg);
+}
+
+.arrow__contact {
+    position: relative;
+width: 78.41px;
+height: 78.05px;
+left: 262.39px;
+top: -20.23px;
+transform: matrix(1, -0.01, -0.01, -1, 0, 0);
+}
+
+/*design les champs de texte dans le formulaire de contact*/
+textarea {
+color: var(--couleur-interfacecontact);
+font-family: var(--font-main);
+font-weight: 700;
+font-size: 14px;
+border: 2px solid var(--bleu);
+box-sizing: border-box;
+width: 99%;
+border-radius: 6.8px;
+}
+
+
+.p__categorie__contact {
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: var(--gri-foncé);
+    font-weight: 800;
+   margin-left: 0px;
+   margin-bottom: 3px;
+
+}
