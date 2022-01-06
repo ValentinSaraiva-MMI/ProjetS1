@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="src/css/layout/apropos.css">
     <link rel="stylesheet" href="src/css/component/captcha.css">
     <title>contact_FR</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        // If reCAPTCHA is still loading, grecaptcha will be undefined.
+        grecaptcha.ready(function () {
+            grecaptcha.render("container", {
+                sitekey: "6LfO9eIdAAAAAJFRsIn7OhSGrrlPldtWn2_QNlvG"
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
@@ -45,65 +56,46 @@
 
     <p class="p__categorie__contact">Nom/ Prénom</p>
     <label for="nom"></label>
-    <textarea id="nom" name="nom" rows="1" cols="48">Ex: Ulfrique Baptiste
-        </textarea>
+    <input class="contact__text-area " type="email" id="email" placeholder="Ulfrique Eliot" pattern=".+@globex\.com"
+        size="30" required>
     <br>
 
     <p class="p__categorie__contact">Email</p>
     <label for="email"></label>
-    <textarea id="email" name="email" rows="1" cols="48">Ex: baptisteulf424@gmail.com
-        </textarea>
+    <input class="contact__text-area " type="email" id="email" placeholder="Email" pattern=".+@globex\.com" size="30"
+        required>
+
     <br>
 
     <p class="p__categorie__contact">Objet</p>
     <label for="objet"></label>
-    <textarea id="objet" name="objet" rows="1" cols="48">Ex: Bug à fixer
-        </textarea>
+    <input class="contact__text-area " type="email" id="email" placeholder="Bug à fixer" pattern=".+@globex\.com"
+        size="30" required>
     <br>
 
 
-    <p class="p__categorie__contact">Message</p>
-    <label for="Message"></label>
-    <textarea id="Message" name="Message" rows="5" cols="48">
-
-        </textarea>
-    <br>
-
-
-
+    <div class="contact__message">
+        <p class="p__categorie__contact">Message</p>
+        <label for="Message"></label>
+        <input class="contact__text-area__message" type="email" id="email" placeholder="Ecrivez votre message ici"
+            pattern=".+@globex\.com" size="30" required>
+        <br>
+    </div>
 
 
 
 
+    <body>
+        <form method="POST">
+            <div class="g-recaptcha" data-sitekey="6LfO9eIdAAAAAJFRsIn7OhSGrrlPldtWn2_QNlvG"></div>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </body>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <button>Envoyer</button>
 
 
 

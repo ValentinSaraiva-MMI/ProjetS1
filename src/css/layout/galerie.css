@@ -1,0 +1,136 @@
+
+h1 {
+    font-family: var(--font-main);
+    font-size: var(--titre_pages);
+    position: relative;
+    left: 94px;
+    top: -63px;
+    margin-bottom: -20px;
+}
+
+
+.deco__title__galerie {
+     position: relative;
+width: 5px;
+height: 36px;
+left:  84px;
+top: -83px;
+background: #127098;
+}
+
+
+.categoriefeministe {
+position: relative;
+width: 212px;
+height: 201px;
+left: 20px;
+top: -55px;
+
+}
+   
+.categoriefeministe 
+a:link {
+  text-decoration: none;
+color: var(--blanc);
+font-size: var(--galerie--bouton);
+font-family: var(--font-main);
+}
+
+.categorie__button__link {
+  position: relative;
+  left: 88px;
+  top: -7.5rem;
+  margin-left: 5px;
+  text-align: center;
+}
+
+
+.categoriefeministe
+a:visited {
+  color: var(--blanc);
+}
+
+.deco__categoriefeministe__galerie {
+  position: absolute;
+top: 40px; left: 40px;
+background: #127098;
+transform: rotate(-90deg);
+}
+
+
+h2 {
+    font-family: var(--font-main);
+    font-size: var(--galerie--titre);
+}
+
+
+.description{  font-family: var(--font-main);
+    font-size: var(--galerie--description);
+     box-align: center;
+}
+
+.tweet__titre {font-family: var(--font-main);
+    font-size: var(--galerie---tweet---titre)
+}
+
+.tweet__description 
+    {font-family: var(--font-main);
+    font-size: var(--galerie---tweet---description);
+position: relative;
+top: -15px;
+font-style: italic;
+ }
+
+
+ .photo__galerie {
+     width: 222px;
+height: 198px;
+position: relative;
+top: 0px; left: 34px;
+ }
+
+
+ .deco__titre__feministe__A4,
+ .deco__titre__feministe__A3,
+ .deco__titre__feministe__A2,
+ .deco__titre__feministe__B,
+ .deco__titre__feministe__A {
+     z-index: -1;
+height: 8px;
+left: 1px;
+top: -31px;
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #127098;
+ }
+
+
+  .deco__titre__feministe__A  {
+ position: relative;
+width: 192px;
+ }
+
+
+ .deco__titre__feministe__A2  {
+ position: relative;
+width: 138px;
+ }
+
+ 
+ .deco__titre__feministe__A3  {
+ position: relative;
+width: 88px;
+ }
+
+ .deco__titre__feministe__A4 {
+ position: relative;
+width: 68px;
+ }
+
+
+
+ .deco__titre__feministe__B {
+ position: relative;
+width: 250px;
+
+left: 0px;
+top: -31px;
+ }

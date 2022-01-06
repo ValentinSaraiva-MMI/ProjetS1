@@ -41,14 +41,14 @@ margin-top: var(--space4x);
 .footer__texte__bottom,
 .footer__texte,
 .footer__texte__top {
-   /* color: var(--blanc);*/
+
   position: relative;
   left: 88px;
   top: -7.5rem;
   text-align: start;
   margin-left: 5px;
   color: var(--blanc);
-
+  
 }
 
 .footer__texte {
@@ -63,3 +63,5 @@ margin-top: var(--space4x);
 .footer__texte__bottom {
   margin-top: -16px;
 }
+
+

@@ -99,3 +99,13 @@ left: 69.87%;
 right: 21.79%;
 top: 82.25%;
 bottom: 15.14%; */
+
+
+.button__categoriefeministe {
+  font-size: var(--galerie--bouton);
+  background-color: var(--bleu);
+box-sizing:border-box;
+border-radius: 5px;
+ margin-left: 20px;
+ text-align: center;
+  }

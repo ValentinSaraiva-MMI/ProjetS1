@@ -182,6 +182,7 @@ border: 2px solid var(--bleu);
 box-sizing: border-box;
 width: 99%;
 border-radius: 6.8px;
+
 }
 
 
@@ -193,4 +194,27 @@ border-radius: 6.8px;
    margin-left: 0px;
    margin-bottom: 3px;
 
+}
+
+.contact__text-area__message,
+.contact__text-area 
+{
+color: var(--noir);
+font-family: var(--font-main);
+font-weight: 700;
+font-size: 14px;
+border: 2px solid var(--bleu);
+box-sizing: border-box;
+width: 99%;
+border-radius: 6.8px;
+}
+
+.contact__text-area__message {
+    height: 10em;
+
+}
+
+.contact__text-area__message::placeholder {
+    position: relative;
+    top: -4em;
 }

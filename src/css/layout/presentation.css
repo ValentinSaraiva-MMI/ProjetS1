@@ -7,12 +7,6 @@
   position: relative;
   display: inline-block;
 }
-
-
-
-
-
-
 /* Effet de surlignement sur le texte */
 .presentation__title strong::before{
   

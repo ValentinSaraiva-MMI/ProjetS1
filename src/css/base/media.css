@@ -37,6 +37,16 @@ figcaption {
     margin: -6.8em;
 }
 
+.margin__negative__E{
+    margin: -9em;
+}
+
+.margin__negative__F{
+    margin: -17.5em;
+}
+
+
+
 
 .Apropos__photo {
     position: relative;
@@ -49,4 +59,5 @@ Height: 335,21px;
 background: url(IMG_5907.jpg);
 border: 3px solid #127098;
 }
+
 

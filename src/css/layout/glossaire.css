@@ -1,0 +1,100 @@
+h1 {
+    font-family: var(--font-main);
+    font-size: var(--titre_pages);
+    position: relative;
+    left: 94px;
+    top: -45px;
+    margin-bottom: -20px;
+}
+
+h2 {  font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 400;
+     position: relative;
+    top: -40px;  
+    left: 10px;
+}
+
+.deco__title__glossaire{
+     position: relative;
+width: 5px;
+height: 30px;
+left:  84px;
+top: -62px;
+background: #127098;
+}
+
+
+.deco__undertitle__glossaire__A
+{ 
+position: relative;
+width: 3px;
+height: 260px;
+left:  140px;
+top: -182px;
+background: #127098;
+transform: rotate(-90deg);
+}
+
+.deco__undertitle__glossaire__B {
+    
+position: relative;
+width: 4px;
+height: 24px;
+left:  3px;
+top: -335px;
+background: #127098;
+}
+
+
+p { font-family: var(--font-main);
+    font-size: var(--glossaire--lettre);
+    position: relative;
+    left: 10px;
+    top: -3px;
+    color: var(--blanc);
+}
+
+
+dt {font-family: var(--font-main);
+    font-size: var(--glossaire--lettre);
+
+}
+
+dd {
+    font-family: var(--font-main);
+    font-size: var(--glossaire---def-mots);
+    padding-bottom: 30px;
+}
+
+.deco__letters__square {
+    z-index: -1;
+position: relative;
+left: 0px;
+top: -41px;
+width: 30px;
+height: 30px;
+background: #127098;
+}
+
+.deco__letters__line {
+     z-index: -1;
+     position: relative;
+left: 4.3px;
+top: -46px;
+width: 21px;
+height: 2px;
+background: var(--blanc);
+}
+
+.deco__words {
+    z-index: -1;
+    position: relative;
+width: 79.13px;
+height: 26px;
+left: 0px;
+top: 0px;
+
+background: #127098;
+border-radius: 16.9565px;
+}
