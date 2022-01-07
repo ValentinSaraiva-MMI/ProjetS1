@@ -56,7 +56,7 @@
 
     <p class="p__categorie__contact">Nom/ Prénom</p>
     <label for="nom"></label>
-    <input class="contact__text-area " type="email" id="email" placeholder="Ulfrique Eliot" pattern=".+@globex\.com"
+    <input class="contact__text-area " type="name" id="name" placeholder="Max Caufield" pattern=".+@globex\.com"
         size="30" required>
     <br>
 
@@ -69,7 +69,7 @@
 
     <p class="p__categorie__contact">Objet</p>
     <label for="objet"></label>
-    <input class="contact__text-area " type="email" id="email" placeholder="Bug à fixer" pattern=".+@globex\.com"
+    <input class="contact__text-area " type="objet" id="objet" placeholder="Bug à fixer" pattern=".+@globex\.com"
         size="30" required>
     <br>
 
@@ -77,19 +77,20 @@
     <div class="contact__message">
         <p class="p__categorie__contact">Message</p>
         <label for="Message"></label>
-        <input class="contact__text-area__message" type="email" id="email" placeholder="Ecrivez votre message ici"
-            pattern=".+@globex\.com" size="30" required>
+        <textarea placeholder="Mon message" rows="10"></textarea>
         <br>
     </div>
 
 
+    <button class="button__send__contact">Envoyer</button>
 
+
+    <div class="margin2"></div>
 
     <body>
         <form method="POST">
             <div class="g-recaptcha" data-sitekey="6LfO9eIdAAAAAJFRsIn7OhSGrrlPldtWn2_QNlvG"></div>
             <br />
-            <input type="submit" value="Submit">
         </form>
     </body>
 

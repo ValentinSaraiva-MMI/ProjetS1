@@ -58,6 +58,10 @@ p { font-family: var(--font-main);
 
 dt {font-family: var(--font-main);
     font-size: var(--glossaire--lettre);
+   box-sizing:border-box;
+    color: var(--blanc);
+
+
 
 }
 
@@ -65,6 +69,12 @@ dd {
     font-family: var(--font-main);
     font-size: var(--glossaire---def-mots);
     padding-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    margin-bottom: -25px;
+  
+
 }
 
 .deco__letters__square {
@@ -87,14 +97,70 @@ height: 2px;
 background: var(--blanc);
 }
 
-.deco__words {
-    z-index: -1;
-    position: relative;
-width: 79.13px;
-height: 26px;
-left: 0px;
-top: 0px;
 
+/*decoration des mots du glossaires */ 
+.deco__words__size0{
+    width: 55px;
+}
+
+.deco__words__size0-5{
+    width: 70px;
+}
+
+.deco__words__size1 {
+width: 80px;
+}
+
+.deco__words__size2 {
+width: 90px;
+}
+
+.deco__words__size3 {
+width: 105px;
+}
+
+.deco__words__size4 {
+width: 115px;
+}
+
+.deco__words__size5 {
+width: 125px;
+}
+
+.deco__words__size6 {
+width: 135px;
+}
+
+.deco__words__size7 {
+width: 180px;
+}
+
+.deco__words__size__max{
+width: 100%
+}
+
+.deco__words__size__min{
+width: 10%
+}
+
+.deco__words__size__min,
+.deco__words__size__max,
+.deco__words__size7,
+.deco__words__size6,
+.deco__words__size5,
+.deco__words__size4,
+.deco__words__size3,
+.deco__words__size2,
+.deco__words__size1,
+.deco__words__size0-5,
+.deco__words__size0,
+.deco__words{
+       z-index: -1;
+    position: relative;
+left: -5px;
+top: 20px;
 background: #127098;
 border-radius: 16.9565px;
+height: 20px;
 }
+
