@@ -17,16 +17,18 @@
         <div id="nav__toggle" class="">
 
 
-            <img src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
-            <button onclick="document.getElementById('nav__toggle').classList.remove('actif')">
-                <div class="button__menu__casseA"></div>
-                <div class="button__menu__casseB"></div>
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+            <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+                <nav class="button__menu__casseA"></nav>
+                <nav class="button__menu__casseB"></nav>
             </button>
 
 
 
             <ul>
-                <img src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                    src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
                 <a href="index.html" class="li__nav__link">
                     <li class="li__nav__design">Accueil</li>
                 </a>
@@ -77,12 +79,14 @@
 
         <nav class="header__menu">
             <button class="button__header__EN">
-                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                <a href="#"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
                         alt="icones de changement de langue en position Francaise"></a>
             </button>
-            <button onclick="document.getElementById('nav__toggle').classList.add('actif')"
-                class="button__header__menu"><img src="assets/icones/menu/Menu.svg"
-                    alt="Icone de menu déroulant"></button>
+
+            <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+                <nav class="button__menu__etat-normalA"></nav>
+                <nav class="button__menu__etat-normalB"></nav>
+            </button>
         </nav>
 
 
@@ -164,7 +168,7 @@
             <a href="frise_FR.html"><img src="assets/Img/Rectangle159.webp"
                     alt="Photo d'une femme devant une galerie, permettant à l'utilisateur de rejoindre la page galerie"></a>
     </div>
-
+    <a href="404.html">404enter</a>
     </article>
 
 

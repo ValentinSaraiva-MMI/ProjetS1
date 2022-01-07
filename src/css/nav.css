@@ -8,11 +8,12 @@
     margin-left: -8px;
     transform: translateX(-100vw);
     transition: all 1.2s ease-in-out;
-    position: fixed
+  
 }
 
 .actif {
 transform: translateX(0)  !important ;
+
 }
 
 
@@ -64,6 +65,18 @@ top: -15px;
 }
 
 
+.button__nav {
+border: 0px;
+background-color: var(--bleu);
+}   /*permet de supprimer le design par defaut du bouton*/ 
+
+
+.button__nav__2 {
+    border: 0px;
+background-color: var(--blanc);
+}
+
+
 .li__nav__design__article__decoA {
     
 position: absolute;
@@ -78,8 +91,8 @@ background: var(--blanc);
     
 position: absolute;
 width: 106px;
-height: 2px;
-left: 22px;
+height: 2.4px;
+left: 24px;
 top: 240px;
 
 background: var(--blanc);
@@ -90,33 +103,15 @@ transform: rotate(-90deg);
 .li__nav__logo {
     position: relative;
     top: 15px;
-    left: 25px;
+    left: 25px;    
 }
 
 
-.button__menu__casseB {
-position: absolute;
-left: 339px;
-top: 28px;
-width: 6.2px;
-height: 35.5px;
-background: #E5E5E5;
-border-radius: 35px;
- }
 
-
-.button__menu__casseA {
-
-width: 7px;
-height: 35px;
-top: 28px;
-background: #E5E5E5;
-border-radius: 25px; 
-position: absolute;
-left: 318px;
-}
 
 /*
 #nav__menu {
     transform: rotateX(45deg);
 } */ 
+
+

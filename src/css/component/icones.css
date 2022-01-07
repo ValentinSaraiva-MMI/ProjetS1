@@ -1,4 +1,54 @@
 
+.button__menu__etat-normalA {
+position: absolute;
+top: 5.4px;
+left: 318px;
+width: 6.2px;
+height:  35px;
+background: var(--noir);
+border-radius: 25px;
+transform: rotate(-90deg);
+}
+
+.button__anglais {
+  position:absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.button__menu__etat-normalB {
+position: absolute;
+left: 318px;
+top: 24.4px;
+width: 6.2px;
+height: 35px;
+background: var(--noir);
+border-radius: 25px;
+transform: rotate(-90deg); 
+}
+
+.button__menu__casseB {
+position: absolute;
+left: 339px;
+top: 28px;
+width: 6.2px;
+height: 35.5px;
+background: var(--noir);
+border-radius: 35px;
+ }
+
+
+.button__menu__casseA {
+width: 7px;
+height: 35px;
+top: 28px;
+background:var(--noir);
+border-radius: 25px; 
+position: absolute;
+left: 318px;
+}
+
+
 .article__arrow{
 position: absolute;
 width: 63px;
@@ -15,7 +65,7 @@ transform: matrix(-0.96, 0.22, -0.27, -0.97, 0, 0);
 position: absolute;
 left: 19.82%;
 right: 53.35%;
-top: 108em;
+top: 109em;
 bottom: 10.41%;
 
 width: 20%;
@@ -29,7 +79,7 @@ transform: matrix(1, -0.01, -0.01, -1, 0, 0);
 position: absolute;
 left: 39.82%;
 right: 43.35%;
-top: 124em;
+top: 125.5em;
 bottom: 10.41%;
 width: 25%;
 }
