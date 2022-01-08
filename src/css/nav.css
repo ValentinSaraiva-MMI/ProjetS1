@@ -13,6 +13,7 @@
 
 .actif {
 transform: translateX(0)  !important ;
+ overflow: hidden;
 
 }
 
@@ -104,6 +105,11 @@ transform: rotate(-90deg);
     position: relative;
     top: 15px;
     left: 25px;    
+}
+
+.no-scroll,
+.no-scroll body{
+    overflow: hidden;
 }
 
 

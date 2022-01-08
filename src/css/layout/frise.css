@@ -1,0 +1,224 @@
+
+html {
+    height: 3300px;
+}
+
+.reduce {
+    height: -3000px;
+    margin-bottom: -2000px;
+}
+
+h1 {
+    font-family: var(--font-main);
+    font-size: var(--titre_pages);
+    position: relative;
+    left: 20px;
+    top: 0px;
+    margin-bottom: -30px;
+    margin-left: 0;
+}
+
+h2 {
+     font-family: var(--font-main);
+    font-size: 20px;
+  position: relative;
+  font-weight: 400;
+  top: -25px;
+  left: 45px;
+}
+
+.deco__title {
+    position: relative;
+width: 4px;
+height: 90%;
+left: 74px;
+top: -60px;
+background: #127098;
+}
+
+.deco__udertitle__A
+{
+    position: relative;
+width: 80%;
+height: 4px;
+left: 40px;
+top: 20px;
+
+background: #127098;
+}
+
+.deco__udertitle__B {
+     position: relative;
+width: 4px;
+height: 18px;
+left: 35px;
+top: -60px;
+background: #127098;
+}
+
+.Fleche__frise {
+    z-index: 1;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.epoque__nom__left {
+    position: relative;
+    left: 10px;
+top: -2750px;
+font-size: var(--frise--epoque);
+font-family: var(--font-main);
+}
+
+.epoque__nom__left__grand {
+        position: relative;
+    left: 0px;
+top: -2750px;
+font-size: var(--frise--epoque);
+font-family: var(--font-main);
+}
+
+
+
+
+.epoque__date__texte__left  {
+     
+    font-size: var(--frise--epoque);
+    font-family: var(--font-main);
+    position: relative;
+    top: -2775px;
+    left: 220px;
+}
+
+
+
+.epoque__date__texte {
+    font-size: var(--frise--epoque);
+    font-family: var(--font-main);
+    position: relative;
+    top: -2779px;
+    left: 110px;
+}
+
+.epoque__date__line {
+    z-index: 2;
+    position: relative;
+width: 48.02px;
+height: 1px;
+left: 155px;
+top: -2730px;
+border: 1px solid #ffffff;
+}
+
+
+.epoque__date__line__dashed {
+    position: relative;
+    width: 70px;
+left: 200px;
+top: -2731px;
+border: 1px dashed #000000;
+transform: rotate(180deg);
+}
+
+.epoque__nom {
+    position: relative;
+    left: 278px;
+top: -2750px;
+font-size: var(--frise--epoque);
+font-family: var(--font-main);
+}
+
+.Date__title {
+       position: relative;
+       left: 30px;
+top: -2760px;
+font-family: var(--font-main);
+font-size: var(--frise--epoque);
+margin-top: -15px;
+}
+
+.date__description {
+    width: 30%;
+ position: relative;
+       left: 10px;
+top: -2765px;
+font-family: var(--font-main);
+font-size: var(--frise--epoque);
+padding: 5px 5px 5px 5px;
+border: solid #127098;
+border-radius: 5px;
+}
+
+.date__link {
+position: relative;
+width: 25px;
+height: 0px;
+left: 130px;
+top: -2810px;
+border: 1px solid #000000;
+}
+
+
+.Date__title__right {
+     position: relative;
+       left: 260px;
+top: -2760px;
+font-family: var(--font-main);
+font-size: var(--frise--epoque);
+margin-top: -10px;
+}
+
+.date__description__right {
+     width: 30%;
+ position: relative;
+       left: 225px;
+top: -2765px;
+font-family: var(--font-main);
+font-size: var(--frise--epoque);
+padding: 5px 5px 5px 5px;
+border: solid #127098;
+border-radius: 5px;
+}
+
+.date__link__right {
+position: relative;
+width: 22px;
+height: 0px;
+left: 202px;
+top: -2810px;
+border: 1px solid #000000;
+}
+
+.epoque__date__line__dashed__right 
+{
+    position: relative;
+    width: 70px;
+left: 85px;
+top: -2731px;
+border: 1px dashed #000000;
+transform: rotate(180deg);
+}
+
+.epoque__date__line__dashed__right__grand {
+        position: relative;
+    width: 34px;
+left: 115px;
+top: -2731px;
+border: 1px dashed #000000;
+transform: rotate(180deg);
+}
+
+.footer__friseFR {
+    position: relative;
+    top: -2600px;
+  
+}
+
+.friseFR {
+    margin-bottom: 10px;
+}
+
+.footer_friseFR {
+margin-top: 0;
+} 

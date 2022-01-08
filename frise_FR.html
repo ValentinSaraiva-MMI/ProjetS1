@@ -6,243 +6,204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout/frise.css">
     <title>Frise</title>
 </head>
 
-<body>
+<body class="friseFR">
     <header>
-        <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
-        <a href="#"><img src="assets/icones/Langues/FR.svg"
-                alt="icones de changement de langue en position Francaise"></a>
-        <a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg" alt="Icone de menu déroulant"></a>
+        <div class="logo__simple">
+            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
+                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+        </div>
 
-        <h1>Frise</h1>
-        <h2>Les grandes dates du féminisme.</h2>
+        <nav class="header__menu">
+            <button class="button__header__EN">
+                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
+                        alt="Icone de menu déroulant"></a> </button>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <p>-3000</p>
-                <p>Antiquité</p>
-                <p> VIIIe siècle av. JC </p>
-                <p>Apparition des Amazones dans l’Iliade d'Homère</p>
-            </article>
 
-            <article>
-                <p> 1200 av. JC</p>
-                <p>La dame Fu Hao mène les troupes de la dynastie Shang à la victoire de plusieurs bataille.</p>
-            </article>
-
-            <article>
-                <p> 51 av. JC</p>
-                <p>Règne de Cléopâtre VII, une des femmes les plus puissante de l’Histoire.</p>
-            </article>
-
-            <article>
-                <p>375</p>
-                <p>Mavia, l'une des reines les plus influentes de l'antiquité arabe, dirige une révolte contre les
-                    romains.</p>
-            </article>
-
-            <article>
-                <p>476</p>
-                <p>Moyen-Age</p>
-            </article>
-
-            <article>
-                <p>1492</p>
-                <p>Temps Modernes</p>
-            </article>
-
-            <article>
-                <p>1789</p>
-                <p>Époque contemporaine </p>
-            </article>
-
-            <article>
-                <p> 1200 av. JC</p>
-                <p>La dame Fu Hao mène les troupes de la dynastie Shang à la victoire de plusieurs bataille.</p>
-            </article>
-
-            <article>
-                <p>1791</p>
-                <p>Olympe de Gouge publie la "Déclaration des Droits de la Femme et de la Citoyenne".</p>
-            </article>
-
-            <article>
-                <p>1792</p>
-                <p>Mary Wollstonecraft, femme publie «Défense des droits de la femme ».</p>
-            </article>
+    <div class="deco__title">
+        <h1>Frise</h1>
+        <h1>Chronologique</h1>
+    </div>
+    <div class="deco__udertitle__A "></div>
+    <h2>Les grandes dates du féminisme.</h2>
+    <div class="deco__udertitle__B"></div>
 
 
-            <article>
-                <p>16 Aout 1861</p>
-                <p>Julie-Victoire Daubié, institutrice de 36 ans, devient la première française à décrocher le
-                    baccalauréat.</p>
-            </article>
+    <img class="Fleche__frise" src="/assets/Img/fleche.jpg" alt="Structure principale de la frise Chronologique">
+    <div class="epoque__date__line"></div>
+    <div class="epoque__date__line__dashed "></div>
+    <p class="epoque__nom">Antiquité</p>
+    <p class="epoque__date__texte">-3000</p>
+
+    <p class="Date__title ">VIIIe siècle av. JC</p>
+    <p class="date__description "> Apparition des Amazones dans l’Iliade d'Homère</p>
+    <div class="date__link"></div>
 
 
-            <article>
-                <p>1792</p>
-                <p>Mary Wollstonecraft, femme publie «Défense des droits de la femme ».</p>
-            </article>
+    <p class="Date__title__right ">1200 av. JC</p>
+    <p class="date__description__right ">La dame Fu Hao mène les troupes de la dynastie Shang à la victoire de
+        plusieurs bataille.</p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">51 av. JC</p>
+    <p class="date__description ">Règne de Cléopâtre VII, une des femmes les plus puissante de l’Histoire.</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">375</p>
+    <p class="date__description__right ">Mavia, l'une des reines les plus influentes de l'antiquité arabe, dirige
+        une révolte contre les romains.</p>
+    <div class="date__link__right"></div>
+
+    <div class="epoque__date__line"></div>
+    <div class="epoque__date__line__dashed__right "></div>
+    <p class="epoque__nom__left">Moyen - Age</p>
+    <p class="epoque__date__texte__left">476</p>
+
+    <div class="epoque__date__line"></div>
+    <div class="epoque__date__line__dashed "></div>
+    <p class="epoque__nom">Temps Modernes</p>
+    <p class="epoque__date__texte">1492</p>
+
+    <div class="epoque__date__line"></div>
+    <div class="epoque__date__line__dashed__right__grand "></div>
+    <p class="epoque__nom__left__grand">Époque contemporaine</p>
+    <p class="epoque__date__texte__left">1789</p>
+
+    <p class="Date__title ">1791</p>
+    <p class="date__description ">Olympe de Gouge publie la "Déclaration des Droits de la Femme et de la
+        Citoyenne".</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">1792</p>
+    <p class="date__description__right ">Mary Wollstonecraft, femme publie «Défense des droits de la femme »</p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">août 1861</p>
+    <p class="date__description ">Julie-Victoire Daubié, institutrice de 36 ans, devient la première française à
+        décrocher le baccalauréat.</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">février 1881</p>
+    <p class="date__description__right ">Hubertine Auclert crée « La Citoyenne » ,un journal bimensuel, à la ligne
+        éditoriale féministe</p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">1903</p>
+    <p class="date__description ">Marie Curie reçoit le prix Nobel de physique pour ses recherches sur la
+        radioactivité</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">juillet 1907</p>
+    <p class="date__description__right ">Les femmes mariées peuvent désormais disposer librement de leur salaire</p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">1909</p>
+    <p class="date__description ">la loi du député Fernand Engeran permet 8 semaines de congés maternité sans
+        possibilité de rupture de contrat de
+        travail.</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">1924</p>
+    <p class="date__description__right ">Le programme scolaire et les épreuves d’examens deviennent identiques pour
+        les hommes et pour les femmes
+    </p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">1975</p>
+    <p class="date__description ">Simone Veil est nommée pour mettre en place la loi Veil qui légalise l'IVG
+        .</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">1980</p>
+    <p class="date__description__right ">Loi sur la considération du viol.
+    </p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">1982</p>
+    <p class="date__description ">La France organise la première journée nationale de la femme.
+    </p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">1995</p>
+    <p class="date__description__right ">Création de l'Observatoire de la parité entre les femmes et les hommes</p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">2002</p>
+    <p class="date__description ">Choix du nom de famille entre celui de la mère et du père</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">2006</p>
+    <p class="date__description__right ">Loi attestant de l’égalité salariale entre les hommes et les femmes
+    </p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">2008</p>
+    <p class="date__description ">Naissance du mouvements femen
+    </p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">2013</p>
+    <p class="date__description__right ">Loi attestant de l’égalité salariale entre les hommes et les femmes
+    </p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">janvier 2016</p>
+    <p class="date__description ">baisse de la TVA sur les produits d'hygiène féminine
+
+    </p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">avril 2016</p>
+    <p class="date__description__right ">lutte contre la prostitution et accompagner les personnes prostitué
+    </p>
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">octobre 2017</p>
+    <p class="date__description ">création du mouvement #BALANCETONPORC</p>
+    <div class="date__link"></div>
+
+    <p class="Date__title__right ">15 octobre 2017</p>
+    <p class="date__description__right ">création du mouvements #METOO
+    <div class="date__link__right"></div>
+
+    <p class="Date__title ">23 fevriers 2021</p>
+    <p class="date__description ">Des protections périodiques bientôt gratuites pour les étudiantes</p>
+    <div class="date__link"></div>
+    </p>
 
 
-            <article>
-                <p>13 févriers 1881</p>
-                <p>Hubertine Auclert crée « La Citoyenne » ,un journal bimensuel, à la ligne éditoriale féministe.</p>
-            </article>
-
-
-            <article>
-                <p>1903</p>
-                <p>Marie Curie reçoit le prix Nobel de physique pour ses recherches sur la radioactivité.</p>
-            </article>
-
-
-            <article>
-                <p>1903</p>
-                <p>Marie Curie reçoit le prix Nobel de physique pour ses recherches sur la radioactivité.</p>
-            </article>
-
-
-            <article>
-                <p>1903</p>
-                <p>Marie Curie reçoit le prix Nobel de physique pour ses recherches sur la radioactivité.</p>
-            </article>
-
-
-            <article>
-                <p>13 juillet 1907</p>
-                <p>Les femmes mariées peuvent désormais disposer librement de leur salaire.</p>
-            </article>
-
-
-            <article>
-                <p>1909</p>
-                <p>la loi du député Fernand Engeran permet 8 semaines de congés maternité sans possibilité de rupture de
-                    contrat de travail.</p>
-            </article>
-
-            <article>
-                <p>1924</p>
-                <p>Le programme scolaire et les épreuves d’examens deviennent identiques pour les hommes et pour les
-                    femmes</p>
-            </article>
-
-            <article>
-                <p>1938</p>
-                <p>Fin de L'incapacité Civile Des Femmes Mariées, elles peuvent désormais posséder une carte d’identité,
-                    un passeport, s'inscrire à l'université ainsi qu’ouvrir un compte en banque sans l’autorisation de
-                    leurs maris.</p>
-            </article>
-
-
-            <article>
-                <p>1967</p>
-                <p> La loi Neuwirth autorise la contraception</p>
-            </article>
-
-            <article>
-                <p>1975</p>
-                <p>Simone Veil est nommée pour mettre en place la loi Veil qui légalise l'IVG</p>
-            </article>
-
-
-            <article>
-                <p>1980</p>
-                <p>Loi sur la considération du viol.</p>
-            </article>
-
-            <article>
-                <p>1982</p>
-                <p>La France organise la première journée nationale de la femme.</p>
-            </article>
-
-            <article>
-                <p>1995</p>
-                <p>Création de l'Observatoire de la parité entre les femmes et les hommes</p>
-            </article>
-
-            <article>
-                <p>2002</p>
-                <p>Choix du nom de famille entre celui de la mère et du père</p>
-            </article>
-
-            <article>
-                <p>2006</p>
-                <p>Loi attestant de l’égalité salariale entre les hommes et les femmes</p>
-            </article>
-
-            <article>
-                <p>2008</p>
-                <p>Mouvement du mouvement femen</p>
-            </article>
-
-            <article>
-                <p>1 janvier 2016</p>
-                <p>Baisse de la TVA sur les produits d'hygiène féminine</p>
-            </article>
-
-            <article>
-                <p>6 avril 2016 </p>
-                <p> lutte contre la prostitution et accompagner les personnes prostitué. </p>
-            </article>
-
-            <article>
-                <p>2016</p>
-                <p>1er plan interministériel en faveur de l’égalité professionnelle</p>
-            </article>
-
-            <article>
-                <p>21 janvier 2017 </p>
-                <p>Marche des femmes a Washington</p>
-            </article>
-
-            <article>
-                <p>13 octobre 2017</p>
-                <p> création du mouvement #BALANCETONPORC</p>
-            </article>
-
-            <article>
-                <p>15 octobre 2017</p>
-                <p> création du mouvements #METOO</p>
-            </article>
-
-            <article>
-                <p>1 mars 2020</p>
-                <p> Indice de l’égalité professionnelle</p>
-            </article>
-
-            <article>
-                <p>23 févriers 2021</p>
-                <p> Des protections périodiques bientôt gratuites pour les étudiantes</p>
-            </article>
-        </section>
-
-
-    </main>
-
+    <div class="margin__negative__G"></div>
+    <div class="margin__negative__F"></div>
 
     <footer>
 
-        <article>
-            <nav>
-                <ul>
-                    <li><a href="contact_FR.html">Contact</a></li>
-                    <li><a href="autreprojets_FR.html">Autres projets</a></li>
-                    <li><a href="apropos_FR.html">À propos</a></li>
-                    <img src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
-                    <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
-            </nav>
-            </ul>
-
+        <article class="footer__menu">
+            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
+                    projets</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
         </article>
 
-    </footer>
 
+        <div class="mentionlegale">
+
+            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+            <div class="footer__mentionlegale__deco"> </div>
+            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+            <p class="footer__texte">pédagogique au département MMI de</p>
+            <p class="footer__texte__bottom"> Montbéliard.</p>
+        </div>
+
+    </footer>
+    <div class="friseFR"></div>
 </body>
 
 </html>
