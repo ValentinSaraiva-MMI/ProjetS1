@@ -1,0 +1,126 @@
+.title__autreprojet {
+     font-family: var(--font-main);
+    font-size: var(--titre_pages);
+    position: relative;
+    left: 74px;
+    top: -50px;
+    margin-bottom: -20px;
+} 
+
+
+h4 {font-family: var(--font-main);
+    font-size: var(--galerie--bouton);
+    width: 72%;
+    position: relative;
+    top: -40px;
+    left: 85px;
+}
+
+.deco__title__AP {
+    position: relative;
+width: 5px;
+height: 30px;
+left: 67px;
+top: -238px;
+background: #127098;
+}
+
+.deco__title__BP {
+position: relative;
+width: 4px;
+height: 14px;
+left: 335px;
+top: -250px;
+background: #127098;
+}
+
+.deco__title__CP {
+
+position: relative;
+width: 4px;
+height: 14px;
+left: 330px;
+top: -250px;
+
+background: #127098;
+transform: rotate(-90deg);
+
+}
+
+
+
+.Title__autre-projet {
+    font-family: var(--font-main);
+    font-size: 20px;
+    margin-top: -5px;
+    color: var(--blanc);
+    margin-left: 10px;
+}
+
+
+
+.Name__autre-projet{
+    font-family: var(--font-main);
+    font-size: 14px;
+        margin-top: -10px;
+        color: var(--blanc);
+        margin-left: 10px;
+}
+
+
+.autre-projet__block {
+    margin-bottom: 20px;
+    background-color: var(--bleu);
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+/*permet de standardiser la taille des images de la catégories "autre projets*/
+.presentation__img__1 {
+    height: 135px;
+    width:360px;
+
+}
+
+.presentation__img__2 {
+height: 120px;
+width: 120px;
+margin-bottom: -3px;
+border: 10px solid #127098;
+border-radius: 5px;
+}
+
+
+
+/* Attribut des caractéristique spécifique au bloque contenant des image de petite taille*/
+.Title__autre-projet__petit {
+    position: relative;
+    left: 140px;
+    top: -120px;
+    font-family: var(--font-main);
+    font-size: 20px;
+    margin-top: -3px;
+    color: var(--blanc);
+    margin-left: 10px;
+    width: 55%;
+}
+
+
+.Name__autre-projet__petit {
+      position: relative;
+    left: 140px;
+    top: -120px;
+ font-family: var(--font-main);
+    font-size: 14px;
+        margin-top: 0px;
+        color: var(--blanc);
+        margin-left: 10px;
+}
+
+.autre-projet__block__petit {
+     margin-bottom: 20px;
+    background-color: var(--bleu);
+    border-radius: 10px;
+    padding-bottom: -20px;
+    height: 160px;
+}
