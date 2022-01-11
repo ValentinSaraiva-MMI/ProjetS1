@@ -1,5 +1,5 @@
 #nav__toggle {
-    position: absolute;
+    position: fixed;
     background-color: var(--bleu);
     z-index: 10;
     height: 90vh;
@@ -8,15 +8,21 @@
     margin-left: -8px;
     transform: translateX(-100vw);
     transition: all 1.2s ease-in-out;
+    
   
 }
 
+
+
 .actif {
 transform: translateX(0)  !important ;
- overflow: hidden;
 
 }
 
+
+.no__scroll {
+overflow: hidden;
+}
 
 
 .li__nav__design {

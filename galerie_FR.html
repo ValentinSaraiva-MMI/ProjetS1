@@ -10,112 +10,333 @@
     <link rel="stylesheet" href="src/css/layout/galerie.css">
     <title>Galerie</title>
 </head>
-
-<body>
-
-    <header>
-        <div class="logo__simple">
-            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
-        </div>
-
-        <nav class="header__menu">
-            <button class="button__header__EN">
-                <a href="#"><img src="assets/icones/Langues/EN.svg"
-                        alt="icones de changement de langue en position Francaise"></a>
-            </button>
-            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
-                        alt="Icone de menu déroulant"></a> </button>
-        </nav>
-    </header>
-
-    <h1>Galerie</h1>
-    <div class="deco__title__galerie"></div>
-
-    <article class="categoriefeministe">
-        <button class="button__categoriefeministe "><a href="#categoriefeministe__precurseurs">Les
-                precurseurs</a></button>
-        <div class="margin1"></div>
-        <button class="button__categoriefeministe "><a href="#categoriefeministe__sportives">Les
-                sportives</a></button>
-        <div class="margin1"></div>
-        <button class="button__categoriefeministe "><a href="#categoriefeministe__scientifiques">Les scientifiques
-                et ingénieurs</a></button>
-        <div class="margin1"></div>
-        <button class="button__categoriefeministe "><a href="#categoriefeministe__artistes">Les
-                artistes</a></button>
-        <div class="margin1"></div>
-        <button class="button__categoriefeministe "><a href="#categoriefeministe__hommes">Les hommes</a></button>
-    </article>
-    <div class="deco__categoriefeministe__galerie"></div>
-    <div class="margin__negative__B"></div>
+<nav class="no__scroll">
+    <div id="nav__toggle" class="no__scroll">
 
 
-    <a id="categoriefeministe__precurseurs"></a>
-    <h3 class="tweet__titre">Les precurseurs:
-        <h3 class="tweet__description ">Parce que tous mouvement à besoin d’un commencement.</h3>
+        <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+            src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+        <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+            <nav class="button__menu__casseA"></nav>
+            <nav class="button__menu__casseB"></nav>
+        </button>
 
 
+
+        <ul>
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="index.html" class="li__nav__link">
+                <li class="li__nav__design">Accueil</li>
+            </a>
+            <div class="li__nav__design__article__decoB"></div>
+            <div class="li__nav__design__article__decoA "></div>
+            <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article" alt="icone d'acceuil">
+            <a href="art_histoire_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une histoire du féminisme</li>
+            </a>
+            <a href="art_feministe_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une féministe d’aujourd’hui comme reflet du passé</li>
+            </a>
+            <a href="art_victoire_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une victoire encore lointaine</li>
+            </a>
+            <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="galerie_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Galerie</li>
+            </a>
+            <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="frise_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Frise</li>
+            </a>
+            <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="glossaire_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Glossaire</li>
+            </a>
+            <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="autreprojets_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Autre Projet</li>
+            </a>
+            <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="contact_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Contact</li>
+            </a>
+            <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="apropos_FR.html" class="li__nav__link">
+                <li class="li__nav__design">À propos</li>
+            </a>
+
+        </ul>
+    </div>
+</nav>
+
+<header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+
+    <nav class="header__menu">
+        <button class="button__header__EN">
+            <a href="galerie_EN.html"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
+                    alt="icones de changement de langue en position Francaise"></a>
+        </button>
+
+        <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+            <nav class="button__menu__etat-normalA"></nav>
+            <nav class="button__menu__etat-normalB"></nav>
+        </button>
+    </nav>
+    <main>
+
+        <a href="index.html"><img class="logo__olympe " src="/assets/icones/logoolympe1.svg" alt="logo olympe"></a>
+        <h1 class="title__Galerie">Galerie</h1>
+        <div class="deco__title__galerie"></div>
+
+        <article class="categoriefeministe">
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__precurseurs">Les
+                    precurseurs</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__sportives">Les
+                    sportives</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__scientifiques">Les scientifiques
+                    et ingénieurs</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__artistes">Les
+                    artistes</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__hommes">Les hommes</a></button>
+        </article>
+        <div class="deco__categoriefeministe__galerie"></div>
+        <div class="margin__negative__B"></div>
+
+
+        <a id="categoriefeministe__precurseurs"></a>
+        <h3 class="tweet__titre">Les precurseurs:
+            <h3 class="tweet__description ">Parce que tous mouvement à besoin d’un commencement.</h3>
+
+
+
+            <article>
+                <h2>Christine de Pizan</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Christine_de_Pizan"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(1).webp" alt="Photo de Christine de Pizan" /></a>
+                <p class="description">Considérée comme la première femme écrivaine de la langue française ayant vécu de
+                    sa
+                    plume. Christine de
+                    Pizan n’est pas considéré comme “Féministe” d’un point de vue moderne, dans le sens où elle ne
+                    souhaite
+                    pas boulverser le système sociétale jugé patriarcale.
+                    Elle écrit en 1405 la cité des dames, considéré comme l’un des premiers ouvrages féministe par sa
+                    conception engagé, qui établie l’intelligence d’une femme par son éducation et non par naissance.
+                </p>
+                <br>
+
+                <h2>Olympe de Gouges</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Olympe_de_Gouges"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(2).webp" alt="Photo de Olympe de Gouges" /></a>
+                <p class="description">Emblème du mouvement féministes Français dont elle sera considéré comme
+                    pionnière.
+                    Olympe de Gouges est l’auteur de la déclaration des droits de la femme et de la citoyenne dans
+                    laquelle
+                    elle affirmait l’égalité des droits civils et politiques des deux sexes. Elle consacra de nombreuses
+                    oeuvres à l’émancipation de la femme à l’égard de son mari, notemment la piece de théatre nécessité
+                    du
+                    divorce, ou elle demande l’instauration du divorce.
+                    Elle monta sur l'échafaud avec courage et dignité, persuadée de ses idées et des avancées qu’elle
+                    proposa. Avant son exécution elle déclara à la foule: “Enfants de la Patrie vous vengerez ma mort”
+                    Elle s'éteint le 3 novembre 1793 à 45 ans.
+
+
+                </p>
+                <br>
+
+                <h2>Elizabeth Cady Stanton</h2>
+                <div class="deco__titre__feministe__B"></div>
+                <a href="https://fr.wikipedia.org/wiki/Elizabeth_Cady_Stantonsi"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(3).webp" alt="Photo de Elizabeth Cady Stanton" /></a>
+                <p class="description">Fille d’un père juge, Elizabeth constata très tôt en fréquentant le bureau de
+                    celui-ci
+                    que la loi
+                    favorisait les hommes au détriment des femmes.
+                    Que les femmes mariées n’ont aucun revenu propre, aucun droit de propriété ou ne peuvent exercer de
+                    droit de garde sur leurs propres enfants.
+                    Epuisée par l’indifférence que porte sa nation à l’égard des inégalités entre les hommes et les
+                    femmes,
+                    elle organisa en 1848 la première convention sur les droits des femmes aux États-Unis (La convention
+                    de
+                    Seneca Falls) faisant d’elle la leader de la premirere vague féministe des Etats Unis.
+
+                </p>
+                <br>
+
+                <h2>Simone de Beauvoir</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Simone_de_Beauvoir"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(4).webp" alt="Photo de Simone de Beauvoir" /></a>
+                <p class="description"> Femme de lettre issues de bonne famille parisienne, Simone de Beauvoir se
+                    distingue
+                    pâr
+                    ses écris engagé
+                    telle que “Le deuxieme sexe” (1949) faisant d’elle la figure de proue de la seconde vague féministe
+                    avec
+                    un constat d’infériorité des femmes dans la société et des pistes de reflexion à travers des angles
+                    nouveau comme l’anatomie, les religion ou les mythes historique.
+                    Elle meurt en 1986 à 78 ans.
+
+                </p>
+                <br>
+
+            </article>
+
+
+
+            <article>
+                <a id="categoriefeministe__sportives"></a>
+                <h3 class="tweet__titre">Les sportives:</h3>
+                <h3 class="tweet__description ">Car les progrès d'idées passent aussi par le dépassement physique. </h3>
+            </article>
+
+
+
+            <article>
+                <h2>Megan Rapinoe</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://www.lesinrocks.com/cheek/megan-rapinoe-one-life-feminisme-308378-12-11-2020/"><img
+                        class="photo__galerie " src="assets/Img/Rectangle49(5).webp" alt="Photo de Megan Rapinoe" /></a>
+                <p class="description">La co capitaine et championne du monde Megan Rapinoe n’a pas peur de faire parler
+                    d’elle
+                    en prenant des
+                    prises de position bien établies et fortes comme la dénonciation des violences policieres faite au
+                    personnes noir, le traitement réservé de la part de l’ex président Trump à l’encontre des minorités
+                    ou
+                    encore sa contribution au mouvement féministe en pointant du doigts la différence de salaires entre
+                    les
+                    joueurs masculins et féminins.
+
+                </p>
+                <br>
+
+                <h2>Clarisse Agbegnenou: </h2>
+                <div class="deco__titre__feministe__B"></div>
+                <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(6).webp"
+                        alt="Photo de Clarisse Agbegnenou" /></a>
+                <p class="description">Profonde humaniste et grande battante, Clarisse sait que dans le sport comme en
+                    société
+                    on n’évolue pas
+                    sans avoir la rage de vaincre et sans s'engager personnellement dans ses combats. En 2019 elle prit
+                    la
+                    responsabilité de devenir marraine de l'association SOS Préma, dont le but est d’aider les enfants
+                    nés
+                    prématurément à avoir de meilleures chances de grandir correctement. La même année elle pris les
+                    même
+                    responsabilité au sein de l’opération féministe “Sport féminin” dont le but est d’amméliorer la
+                    médiatisation des sports féminin.
+                </p>
+                <br>
+
+                <h2>Stéphane Pallez</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href=""><img class="photo__galerie " src="assets/Img/Rectangle49(7).webp"
+                        alt="Photo de Stéphane Pallez" /></a>
+                <p class="description">PDG de la Française des jeux depuis 2014, Stéphane Pallez entend bien aussi
+                    contribuer à
+                    réduire les
+                    inégalités dans le
+                    sport au travers de sa société.
+                    Pour cela la FDJ met en place depuis 2016 le programme “Sport pour elles” s'appuyant autours de
+                    plusieurs
+                    piliers,
+                    l’encouragement de la pratique sportive pour les femmes, le soutien financier au sportives pro, une
+                    participation à la
+                    médiatisation du sport féminin et pour finir la mobilisation du réseau de la fdj pour permettre au
+                    femmes
+                    d’accéder au
+                    grande instance sportive.
+                </p>
+                <br>
+            </article>
+
+
+            <article>
+
+                <a id="categoriefeministe__scientifiques"></a>
+                <h3 class="tweet__titre">Les scientifiques et ingénieurs:</h3>
+        </h3>
+        <h3 class="tweet__description ">Sans qui le monde ne serait pas aussi avancé.</h3>
+        </article>
 
         <article>
-            <h2>Christine de Pizan</h2>
+            <h2>Marie Curie</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(8).webp"
+                    alt="Photo de Marie Curie" /></a>
+            <p class="description">Passionnée depuis toujours par la science et la recherche, et dotée d’une
+                détermination à
+                toute épreuve
+                Marie Curie ne laissera pas un milieu exclusivement masculin l'empêcher d'avancer dans ses découvertes.
+                A la fac, les effectifs ne comptaient que 23 femmes pour 4000 étudiants mais ça ne fait que la motiver à
+                devenir maître dans ce domaine, pour preuve elle est la première femme à avoir reçu le prix Nobel et, à
+                ce jour, la seule femme à en avoir reçu deux. Elle reste la seule personne à avoir été récompensée dans
+                deux domaines scientifiques distincts: la physique en 1903, et la chimie en 1911.
+                Ses découvertes dans le milieux de la radiation et sa contribution médicale durant la grande guerre
+                feront de Marie Curie, une illustre héroïne du XXéme siècle.
+                Elle mourut en 1934, malade de ses découvertes mais libérée de sa condition de femmes.
+            </p>
+            <br>
+            <h2>Evelyn Fox Keller:</h2>
             <div class="deco__titre__feministe__A"></div>
-            <a href="https://fr.wikipedia.org/wiki/Christine_de_Pizan"><img class="photo__galerie "
-                    src="assets/Img/Rectangle49(1).webp" alt="Photo de Christine de Pizan" /></a>
-            <p class="description">Considérée comme la première femme écrivaine de la langue française ayant vécu de sa
-                plume. Christine de
-                Pizan n’est pas considéré comme “Féministe” d’un point de vue moderne, dans le sens où elle ne souhaite
-                pas boulverser le système sociétale jugé patriarcale.
-                Elle écrit en 1405 la cité des dames, considéré comme l’un des premiers ouvrages féministe par sa
-                conception engagé, qui établie l’intelligence d’une femme par son éducation et non par naissance.
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(9).webp"
+                    alt="Photo de Evelyn Fox Keller" /></a>
+            <p class="description">Professeur d’histoire et de philosophie des sciences au MIT.
+                Evelyn donne un regard théorique des conséquences de la société sur le monde scientifique.
+                En publiant “Reflections on Gender and Science” en 1985 son apport le plus marquant se situe dans le
+                domaine « science et genre », ou elle met en relation à travers sa propre expérience de femmes le sujet
+                du genre dans un univers quasi exclusivement masculin .
+
             </p>
             <br>
 
-            <h2>Olympe de Gouges</h2>
-            <div class="deco__titre__feministe__A"></div>
-            <a href="https://fr.wikipedia.org/wiki/Olympe_de_Gouges"><img class="photo__galerie "
-                    src="assets/Img/Rectangle49(2).webp" alt="Photo de Olympe de Gouges" /></a>
-            <p class="description">Emblème du mouvement féministes Français dont elle sera considéré comme pionnière.
-                Olympe de Gouges est l’auteur de la déclaration des droits de la femme et de la citoyenne dans laquelle
-                elle affirmait l’égalité des droits civils et politiques des deux sexes. Elle consacra de nombreuses
-                oeuvres à l’émancipation de la femme à l’égard de son mari, notemment la piece de théatre nécessité du
-                divorce, ou elle demande l’instauration du divorce.
-                Elle monta sur l'échafaud avec courage et dignité, persuadée de ses idées et des avancées qu’elle
-                proposa. Avant son exécution elle déclara à la foule: “Enfants de la Patrie vous vengerez ma mort”
-                Elle s'éteint le 3 novembre 1793 à 45 ans.
 
+            <h2 id="galerie__adalovelace">Ada Lovelace: </h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(10).webp"
+                    alt="Photo de Ada Lovelace" /></a>
+            <p class="description">Depuis son enfance Ada se sert de son imagination débordante pour imaginer bon nombre
+                de
+                machines
+                futuristes.
+                Passionnée par l’univers mystérieux et complexe des mathématiques, elle est persuadée que c’est par
+                cette voie que l’avenir se construira.
+                Mais en 1820 les filles ne sont pas encouragées à suivre des cours de physique , de mathématique ou
+                d'ingénierie, car elles ne sont pas considérées comme assez intelligentes. Mais Ada ne laisse pas les
+                préjuger de son temps entaché sa passion.
+                Devenue adulte et ayant suivi une éducation spécialisé dans les mathématiques, elle deviendra la
+                premièrre personne à avoir réalisé un programme informatique lors de travaux réalisés sur la machine
+                analytique de Charles Babbage.
+                Elle mourut jeune, dans la douleur et oubliée de l’Histoire, mais avec la sérénité d’être parvenue à
+                réaliser ses rêves.
 
             </p>
             <br>
 
-            <h2>Elizabeth Cady Stanton</h2>
+            <h2>Valentina Terechkova : </h2>
             <div class="deco__titre__feministe__B"></div>
-            <a href="https://fr.wikipedia.org/wiki/Elizabeth_Cady_Stantonsi"><img class="photo__galerie "
-                    src="assets/Img/Rectangle49(3).webp" alt="Photo de Elizabeth Cady Stanton" /></a>
-            <p class="description">Fille d’un père juge, Elizabeth constata très tôt en fréquentant le bureau de
-                celui-ci
-                que la loi
-                favorisait les hommes au détriment des femmes.
-                Que les femmes mariées n’ont aucun revenu propre, aucun droit de propriété ou ne peuvent exercer de
-                droit de garde sur leurs propres enfants.
-                Epuisée par l’indifférence que porte sa nation à l’égard des inégalités entre les hommes et les femmes,
-                elle organisa en 1848 la première convention sur les droits des femmes aux États-Unis (La convention de
-                Seneca Falls) faisant d’elle la leader de la premirere vague féministe des Etats Unis.
-
-            </p>
-            <br>
-
-            <h2>Simone de Beauvoir</h2>
-            <div class="deco__titre__feministe__A"></div>
-            <a href="https://fr.wikipedia.org/wiki/Simone_de_Beauvoir"><img class="photo__galerie "
-                    src="assets/Img/Rectangle49(4).webp" alt="Photo de Simone de Beauvoir" /></a>
-            <p class="description"> Femme de lettre issues de bonne famille parisienne, Simone de Beauvoir se distingue
-                pâr
-                ses écris engagé
-                telle que “Le deuxieme sexe” (1949) faisant d’elle la figure de proue de la seconde vague féministe avec
-                un constat d’infériorité des femmes dans la société et des pistes de reflexion à travers des angles
-                nouveau comme l’anatomie, les religion ou les mythes historique.
-                Elle meurt en 1986 à 78 ans.
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(11).webp"
+                    alt="Photo de Valentina Terechkova : " /></a>
+            <p class="description"> Parachutiste d’excellence et communiste convaincu, la Russe Valentina Terechkova
+                devient
+                pour la gloire
+                de l’union soviétique la première femme à réaliser un vol dans l’espace le 16 juin 1963. Seule à bord de
+                son vaisseau spatial.
+                Les résultats d’après mission ont été plutôt négatifs, mais pour son courage, elle fut récompensée par
+                les deux plus hautes récompenses du pays: le titre de Héros de l'Union soviétique ainsi que l'Ordre de
+                Lénine.
+                Elle deviendra au yeux du monde, un symbole d’égalité entre les hommes et les femmes en réalisant pas
+                moins de 43 conférences à l’étrangers et en devenant représentant de l'Union Soviétique à l'Année
+                internationale des femmes en 1975 .
+                Elle restera la preuve qu' avec de la détermination et du courage les femmes aussi peuvent atteindre les
+                étoiles.
 
             </p>
             <br>
@@ -123,305 +344,156 @@
         </article>
 
 
-
         <article>
-            <a id="categoriefeministe__sportives"></a>
-            <h3 class="tweet__titre">Les sportives:</h3>
-            <h3 class="tweet__description ">Car les progrès d'idées passent aussi par le dépassement physique. </h3>
+            <a id="categoriefeministe__artistes"></a>
+            <h3 class="tweet__titre">Les artistes:</h3>
+            <h3 class="tweet__description">Car l’art est aussi un excellent moyen de dénonciation.</h3>
         </article>
 
 
-
         <article>
-            <h2>Megan Rapinoe</h2>
-            <div class="deco__titre__feministe__A"></div>
-            <a href="https://www.lesinrocks.com/cheek/megan-rapinoe-one-life-feminisme-308378-12-11-2020/"><img
-                    class="photo__galerie " src="assets/Img/Rectangle49(5).webp" alt="Photo de Megan Rapinoe" /></a>
-            <p class="description">La co capitaine et championne du monde Megan Rapinoe n’a pas peur de faire parler
-                d’elle
-                en prenant des
-                prises de position bien établies et fortes comme la dénonciation des violences policieres faite au
-                personnes noir, le traitement réservé de la part de l’ex président Trump à l’encontre des minorités ou
-                encore sa contribution au mouvement féministe en pointant du doigts la différence de salaires entre les
-                joueurs masculins et féminins.
-
-            </p>
-            <br>
-
-            <h2>Clarisse Agbegnenou: </h2>
+            <h2>Carolee Schneemann: </h2>
             <div class="deco__titre__feministe__B"></div>
-            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(6).webp"
-                    alt="Photo de Clarisse Agbegnenou" /></a>
-            <p class="description">Profonde humaniste et grande battante, Clarisse sait que dans le sport comme en
-                société
-                on n’évolue pas
-                sans avoir la rage de vaincre et sans s'engager personnellement dans ses combats. En 2019 elle prit la
-                responsabilité de devenir marraine de l'association SOS Préma, dont le but est d’aider les enfants nés
-                prématurément à avoir de meilleures chances de grandir correctement. La même année elle pris les même
-                responsabilité au sein de l’opération féministe “Sport féminin” dont le but est d’amméliorer la
-                médiatisation des sports féminin.
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(12).webp"
+                    alt="Photo de Carolee Schneemann: " /></a>
+            <p class="description">Artiste multidisciplinaire depuis les années 60. Carolee Schneemann se sert autant de
+                peinture,
+                photographie, film et prestation pour remettre en cause la vision archaïque du corps de la femme, ainsi
+                que les tabous de la sexualité dans la société. Elle ne sait que trop bien que le monde de l’art est
+                dominé par des codes masculins.
+                “Tu es une gamine fabuleuse, tu pourrais aller très loin, mais ne prends pas l'art trop à cœur, tu n'es
+                qu'une fille”
+                Telle était les paroles de son professeur quand il comprit les ambitions que nourrissait son élève. Mais
+                Carolee s’insurge et ne laissera jamais le monde qu’elle adule l’exclure pour le sexe qu’elle porte.
+                Elle ira même jusqu'à le provoquer en se servant du corps féminin comme outils d’art. Elle mourut le 6
+                mars 2019 à 79 ans, reconnue et récompensée par ses convictions et ses œuvres.
+
             </p>
             <br>
 
-            <h2>Stéphane Pallez</h2>
-            <div class="deco__titre__feministe__A"></div>
-            <a href=""><img class="photo__galerie " src="assets/Img/Rectangle49(7).webp"
-                    alt="Photo de Stéphane Pallez" /></a>
-            <p class="description">PDG de la Française des jeux depuis 2014, Stéphane Pallez entend bien aussi
-                contribuer à
-                réduire les
-                inégalités dans le
-                sport au travers de sa société.
-                Pour cela la FDJ met en place depuis 2016 le programme “Sport pour elles” s'appuyant autours de
-                plusieurs
-                piliers,
-                l’encouragement de la pratique sportive pour les femmes, le soutien financier au sportives pro, une
-                participation à la
-                médiatisation du sport féminin et pour finir la mobilisation du réseau de la fdj pour permettre au
-                femmes
-                d’accéder au
-                grande instance sportive.
+            <h2>Miss Tic</h2>
+            <div class="deco__titre__feministe__A3"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(13).webp"
+                    alt="Photo de Miss Tic" /></a>
+            <p class="description">Depuis 1985, Miss tic est LA figure féminine et féministe du street art Francais
+                Elle se sert des quartiers parisiens comme des fresques pour y représenter les femme dans ce qu’elles
+                ont de plus fort.
+                Une fierté, une liberté et un pouvoir qu’elle se plaît à retranscrire au travers de ses histoires
+                personnelles.
+                Désormais âgée de 65 ans, Miss tic exerce toujours et est même sollicité par des villes, pour désigner
+                des milieux urbains telle que la 5e ligne de tramway de montpellier en 2017
+
+
             </p>
             <br>
+
+            <h2>AIKO</h2>
+            <div class="deco__titre__feministe__A4"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(14).webp" alt="Photo de AIKO" /></a>
+            <p class="description">Basée à New York où elle travaille et vit depuis le milieu des années 90, AIKO est
+                une
+                artiste de street
+                art japonaise qui réussit rapidement à se faire un nom dans l’univers masculin du street art.
+                En collaborant avec des titans de l’art moderne tels que le collectif FAILE ou encore Banksy, AIKO se
+                taille une réputation bien au-delà des portes de New York, en mettant en avant des femmes glamour,
+                puissantes et décomplexées.
+                Aidé par les plus grands, c’est avant tout grâce à son style graphique particuliers de mix entre culture
+                américaine et inspiration japonaise le tout pronant des convictions féministe actuel que AIKO deviendra
+                une figure connues à l’international.
+
+            </p>
+            <br>
+
+        </article>
+
+
+
+        <article>
+            <a id="categoriefeministe__hommes"></a>
+            <h3 class="tweet__titre">Les Hommes:</h3>
+            <h3 class="tweet__description">Car une égalité ne se définit jamais seule..</h3>
         </article>
 
 
         <article>
+            <h2>Hayao Miyazaki: </h2>
+            <div class="deco__titre__feministe__A"></div>
+            <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki"><img class="photo__galerie "
+                    src="assets/Img/Rectangle49(15).webp" alt="Photo de Hayao Miyazaki:" /></a>
+            <p class="description">Au milieu de son univers loufoque, poétique et coloré. Hayao Miyazaki, le cofondateur
+                du
+                studio Ghibli à
+                qui l'on doit entre autre “Mon voisins Totoro et princesse mononoké pour ne citer qu’eux se sert aussi
+                de ses films comme d’un support pour véhiculer les enjeux sociaux actuelle qui le tienne à coeur, telle
+                que l’écologisme et le féminisme.
+                Le studio Ghibli se distingue des autres studios d’animation pour l’importance qu’il accorde dans
+                énormément de ses films au personnage féminin.
+                De plus, il est allé jusqu'à encourager l’embauche des femmes au studio tout en s’assurant de leurs
+                ascension professionnelles.
 
-            <a id="categoriefeministe__scientifiques"></a>
-            <h3 class="tweet__titre">Les scientifiques et ingénieurs:</h3>
-    </h3>
-    <h3 class="tweet__description ">Sans qui le monde ne serait pas aussi avancé.</h3>
-    </article>
+            </p>
+            <br>
 
-    <article>
-        <h2>Marie Curie</h2>
-        <div class="deco__titre__feministe__A2"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(8).webp" alt="Photo de Marie Curie" /></a>
-        <p class="description">Passionnée depuis toujours par la science et la recherche, et dotée d’une
-            détermination à
-            toute épreuve
-            Marie Curie ne laissera pas un milieu exclusivement masculin l'empêcher d'avancer dans ses découvertes.
-            A la fac, les effectifs ne comptaient que 23 femmes pour 4000 étudiants mais ça ne fait que la motiver à
-            devenir maître dans ce domaine, pour preuve elle est la première femme à avoir reçu le prix Nobel et, à
-            ce jour, la seule femme à en avoir reçu deux. Elle reste la seule personne à avoir été récompensée dans
-            deux domaines scientifiques distincts: la physique en 1903, et la chimie en 1911.
-            Ses découvertes dans le milieux de la radiation et sa contribution médicale durant la grande guerre
-            feront de Marie Curie, une illustre héroïne du XXéme siècle.
-            Elle mourut en 1934, malade de ses découvertes mais libérée de sa condition de femmes.
-        </p>
-        <br>
-        <h2>Evelyn Fox Keller:</h2>
-        <div class="deco__titre__feministe__A"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(9).webp"
-                alt="Photo de Evelyn Fox Keller" /></a>
-        <p class="description">Professeur d’histoire et de philosophie des sciences au MIT.
-            Evelyn donne un regard théorique des conséquences de la société sur le monde scientifique.
-            En publiant “Reflections on Gender and Science” en 1985 son apport le plus marquant se situe dans le
-            domaine « science et genre », ou elle met en relation à travers sa propre expérience de femmes le sujet
-            du genre dans un univers quasi exclusivement masculin .
+            <h2>Kurt Cobain</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(16).webp"
+                    alt="Photo de Kurt Cobain" /></a>
+            <p class="description">Dès son plus jeune âge, le guitariste de légende ne parvient à se nouer d’amitié
+                quasi
+                exclusivement avec
+                filles ce qui lui inculquera pour le restant de sa courte vie des valeurs de respect et de considération
+                particulière à leurs égard.
+                Mais au-delà de simples valeurs personnelles, il se servira de ses musiques et de leurs intérêts
+                médiatiques pour partager et éduquer son audience dans les combats qui lui tiennent à cœur telle que: le
+                feminisme, le harcelement, le viol et la cause homosexuel.
+                Lui et sa femme Courtney Love iront même jusqu’a donner plusieurs concert carritatif afin de soutenir
+                des victimes de violence conjiguales, pour beaucoup de jeunes des années 90's' lui et son groupe
+                deviendront un cri de révolte et une demande de progrès pour l’égalité et l’acceptation.
+                Il rejoindra le club des 27 le 5 avril 1994 suite à un suicide.
 
-        </p>
-        <br>
+            </p>
+            <br>
 
+            <h2>Mark Ruffalo</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(17).webp"
+                    alt="Photo de Mark Ruffalo" /></a>
+            <p class="description">Depuis quelque années maintenant l’acteur de Hulk au cinéma, fait partie des grandes
+                voix
+                qui ose
+                dénoncer le sexisme et le machisme présent à Hollywood et se revendiquer pleinement féministe. Il admet
+                regretter le manque de place des femmes dans le cinéma et s’attriste des personnages qui leurs sont
+                accordés (souvent secondaire, inutile ou mal écris par manque d'intérêt).
+                Pour défendre le droit à l'avortement, menacé dans de nombreux États américains, Mark Ruffalo publiera
+                sur le net une lettre tres personelle et engagé, dans laquel il rappelera que l’avortement est un droit
+                qui leurs est accordé dans la constitution Amériquaine.
+            </p>
+            <br>
 
-        <h2 id="galerie__adalovelace">Ada Lovelace: </h2>
-        <div class="deco__titre__feministe__A2"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(10).webp"
-                alt="Photo de Ada Lovelace" /></a>
-        <p class="description">Depuis son enfance Ada se sert de son imagination débordante pour imaginer bon nombre
-            de
-            machines
-            futuristes.
-            Passionnée par l’univers mystérieux et complexe des mathématiques, elle est persuadée que c’est par
-            cette voie que l’avenir se construira.
-            Mais en 1820 les filles ne sont pas encouragées à suivre des cours de physique , de mathématique ou
-            d'ingénierie, car elles ne sont pas considérées comme assez intelligentes. Mais Ada ne laisse pas les
-            préjuger de son temps entaché sa passion.
-            Devenue adulte et ayant suivi une éducation spécialisé dans les mathématiques, elle deviendra la
-            premièrre personne à avoir réalisé un programme informatique lors de travaux réalisés sur la machine
-            analytique de Charles Babbage.
-            Elle mourut jeune, dans la douleur et oubliée de l’Histoire, mais avec la sérénité d’être parvenue à
-            réaliser ses rêves.
-
-        </p>
-        <br>
-
-        <h2>Valentina Terechkova : </h2>
-        <div class="deco__titre__feministe__B"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(11).webp"
-                alt="Photo de Valentina Terechkova : " /></a>
-        <p class="description"> Parachutiste d’excellence et communiste convaincu, la Russe Valentina Terechkova
-            devient
-            pour la gloire
-            de l’union soviétique la première femme à réaliser un vol dans l’espace le 16 juin 1963. Seule à bord de
-            son vaisseau spatial.
-            Les résultats d’après mission ont été plutôt négatifs, mais pour son courage, elle fut récompensée par
-            les deux plus hautes récompenses du pays: le titre de Héros de l'Union soviétique ainsi que l'Ordre de
-            Lénine.
-            Elle deviendra au yeux du monde, un symbole d’égalité entre les hommes et les femmes en réalisant pas
-            moins de 43 conférences à l’étrangers et en devenant représentant de l'Union Soviétique à l'Année
-            internationale des femmes en 1975 .
-            Elle restera la preuve qu' avec de la détermination et du courage les femmes aussi peuvent atteindre les
-            étoiles.
-
-        </p>
-        <br>
-
-    </article>
-
-
-    <article>
-        <a id="categoriefeministe__artistes"></a>
-        <h3 class="tweet__titre">Les artistes:</h3>
-        <h3 class="tweet__description">Car l’art est aussi un excellent moyen de dénonciation.</h3>
-    </article>
-
-
-    <article>
-        <h2>Carolee Schneemann: </h2>
-        <div class="deco__titre__feministe__B"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(12).webp"
-                alt="Photo de Carolee Schneemann: " /></a>
-        <p class="description">Artiste multidisciplinaire depuis les années 60. Carolee Schneemann se sert autant de
-            peinture,
-            photographie, film et prestation pour remettre en cause la vision archaïque du corps de la femme, ainsi
-            que les tabous de la sexualité dans la société. Elle ne sait que trop bien que le monde de l’art est
-            dominé par des codes masculins.
-            “Tu es une gamine fabuleuse, tu pourrais aller très loin, mais ne prends pas l'art trop à cœur, tu n'es
-            qu'une fille”
-            Telle était les paroles de son professeur quand il comprit les ambitions que nourrissait son élève. Mais
-            Carolee s’insurge et ne laissera jamais le monde qu’elle adule l’exclure pour le sexe qu’elle porte.
-            Elle ira même jusqu'à le provoquer en se servant du corps féminin comme outils d’art. Elle mourut le 6
-            mars 2019 à 79 ans, reconnue et récompensée par ses convictions et ses œuvres.
-
-        </p>
-        <br>
-
-        <h2>Miss Tic</h2>
-        <div class="deco__titre__feministe__A3"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(13).webp" alt="Photo de Miss Tic" /></a>
-        <p class="description">Depuis 1985, Miss tic est LA figure féminine et féministe du street art Francais
-            Elle se sert des quartiers parisiens comme des fresques pour y représenter les femme dans ce qu’elles
-            ont de plus fort.
-            Une fierté, une liberté et un pouvoir qu’elle se plaît à retranscrire au travers de ses histoires
-            personnelles.
-            Désormais âgée de 65 ans, Miss tic exerce toujours et est même sollicité par des villes, pour désigner
-            des milieux urbains telle que la 5e ligne de tramway de montpellier en 2017
-
-
-        </p>
-        <br>
-
-        <h2>AIKO</h2>
-        <div class="deco__titre__feministe__A4"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(14).webp" alt="Photo de AIKO" /></a>
-        <p class="description">Basée à New York où elle travaille et vit depuis le milieu des années 90, AIKO est
-            une
-            artiste de street
-            art japonaise qui réussit rapidement à se faire un nom dans l’univers masculin du street art.
-            En collaborant avec des titans de l’art moderne tels que le collectif FAILE ou encore Banksy, AIKO se
-            taille une réputation bien au-delà des portes de New York, en mettant en avant des femmes glamour,
-            puissantes et décomplexées.
-            Aidé par les plus grands, c’est avant tout grâce à son style graphique particuliers de mix entre culture
-            américaine et inspiration japonaise le tout pronant des convictions féministe actuel que AIKO deviendra
-            une figure connues à l’international.
-
-        </p>
-        <br>
-
-    </article>
-
-
-
-    <article>
-        <a id="categoriefeministe__hommes"></a>
-        <h3 class="tweet__titre">Les Hommes:</h3>
-        <h3 class="tweet__description">Car une égalité ne se définit jamais seule..</h3>
-    </article>
-
-
-    <article>
-        <h2>Hayao Miyazaki: </h2>
-        <div class="deco__titre__feministe__A"></div>
-        <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki"><img class="photo__galerie "
-                src="assets/Img/Rectangle49(15).webp" alt="Photo de Hayao Miyazaki:" /></a>
-        <p class="description">Au milieu de son univers loufoque, poétique et coloré. Hayao Miyazaki, le cofondateur
-            du
-            studio Ghibli à
-            qui l'on doit entre autre “Mon voisins Totoro et princesse mononoké pour ne citer qu’eux se sert aussi
-            de ses films comme d’un support pour véhiculer les enjeux sociaux actuelle qui le tienne à coeur, telle
-            que l’écologisme et le féminisme.
-            Le studio Ghibli se distingue des autres studios d’animation pour l’importance qu’il accorde dans
-            énormément de ses films au personnage féminin.
-            De plus, il est allé jusqu'à encourager l’embauche des femmes au studio tout en s’assurant de leurs
-            ascension professionnelles.
-
-        </p>
-        <br>
-
-        <h2>Kurt Cobain</h2>
-        <div class="deco__titre__feministe__A2"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(16).webp" alt="Photo de Kurt Cobain" /></a>
-        <p class="description">Dès son plus jeune âge, le guitariste de légende ne parvient à se nouer d’amitié
-            quasi
-            exclusivement avec
-            filles ce qui lui inculquera pour le restant de sa courte vie des valeurs de respect et de considération
-            particulière à leurs égard.
-            Mais au-delà de simples valeurs personnelles, il se servira de ses musiques et de leurs intérêts
-            médiatiques pour partager et éduquer son audience dans les combats qui lui tiennent à cœur telle que: le
-            feminisme, le harcelement, le viol et la cause homosexuel.
-            Lui et sa femme Courtney Love iront même jusqu’a donner plusieurs concert carritatif afin de soutenir
-            des victimes de violence conjiguales, pour beaucoup de jeunes des années 90's' lui et son groupe
-            deviendront un cri de révolte et une demande de progrès pour l’égalité et l’acceptation.
-            Il rejoindra le club des 27 le 5 avril 1994 suite à un suicide.
-
-        </p>
-        <br>
-
-        <h2>Mark Ruffalo</h2>
-        <div class="deco__titre__feministe__A2"></div>
-        <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(17).webp"
-                alt="Photo de Mark Ruffalo" /></a>
-        <p class="description">Depuis quelque années maintenant l’acteur de Hulk au cinéma, fait partie des grandes
-            voix
-            qui ose
-            dénoncer le sexisme et le machisme présent à Hollywood et se revendiquer pleinement féministe. Il admet
-            regretter le manque de place des femmes dans le cinéma et s’attriste des personnages qui leurs sont
-            accordés (souvent secondaire, inutile ou mal écris par manque d'intérêt).
-            Pour défendre le droit à l'avortement, menacé dans de nombreux États américains, Mark Ruffalo publiera
-            sur le net une lettre tres personelle et engagé, dans laquel il rappelera que l’avortement est un droit
-            qui leurs est accordé dans la constitution Amériquaine.
-        </p>
-        <br>
-
-    </article>
-
-
-
-    <footer class="footer__space">
-
-        <article class="footer__menu">
-            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
-            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
-                    projets</button>
-            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
         </article>
 
 
-        <div class="mentionlegale">
 
-            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
-            <div class="footer__mentionlegale__deco"> </div>
-            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
-            <p class="footer__texte">pédagogique au département MMI de</p>
-            <p class="footer__texte__bottom"> Montbéliard.</p>
-        </div>
+        <footer class="footer__space">
 
-    </footer>
-
+            <article class="footer__menu">
+                <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+                <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
+                        projets</button>
+                <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
+            </article>
 
 
+            <div class="mentionlegale">
+
+                <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+                <div class="footer__mentionlegale__deco"> </div>
+                <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+                <p class="footer__texte">pédagogique au département MMI de</p>
+                <p class="footer__texte__bottom"> Montbéliard.</p>
+            </div>
+
+        </footer>
 
 
 
@@ -429,6 +501,9 @@
 
 
 
-</body>
+
+
+
+        </body>
 
 </html>

@@ -4,8 +4,10 @@ h1 {
     font-size: var(--titre_pages);
     position: relative;
     left: 94px;
-    top: -63px;
-    margin-bottom: -20px;
+    top: -43px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    width: 159px;
 }
 
 
@@ -14,8 +16,10 @@ h1 {
 width: 5px;
 height: 36px;
 left:  84px;
-top: -83px;
+top: -133px;
 background: #127098;
+ margin-bottom: 5px;
+  margin-top: 50px;
 }
 
 
@@ -24,7 +28,7 @@ position: relative;
 width: 212px;
 height: 201px;
 left: 20px;
-top: -55px;
+top: -75px;
 
 }
    
@@ -67,6 +71,11 @@ h2 {
 .description{  font-family: var(--font-main);
     font-size: var(--galerie--description);
      box-align: center;
+     width: 90%;
+     margin-left: 3px;
+     margin-right: 2px;
+     width: 80%;
+     margin-left: 35px;
 }
 
 .tweet__titre {font-family: var(--font-main);

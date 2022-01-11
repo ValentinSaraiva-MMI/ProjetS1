@@ -2,9 +2,10 @@
      font-family: var(--font-main);
     font-size: var(--titre_pages);
     position: relative;
-    left: 74px;
-    top: -50px;
-    margin-bottom: -20px;
+    left: 64px;
+    top: -7px;
+    margin-bottom: -17px;
+    width: 80%;
 } 
 
 
@@ -12,16 +13,16 @@ h4 {font-family: var(--font-main);
     font-size: var(--galerie--bouton);
     width: 72%;
     position: relative;
-    top: -40px;
-    left: 85px;
+    top: 0px;
+    left: 75px;
 }
 
 .deco__title__AP {
     position: relative;
 width: 5px;
 height: 30px;
-left: 67px;
-top: -238px;
+left: 57px;
+top: -198px;
 background: #127098;
 }
 
@@ -29,8 +30,8 @@ background: #127098;
 position: relative;
 width: 4px;
 height: 14px;
-left: 335px;
-top: -250px;
+left: 325px;
+top: -205px;
 background: #127098;
 }
 
@@ -39,8 +40,8 @@ background: #127098;
 position: relative;
 width: 4px;
 height: 14px;
-left: 330px;
-top: -250px;
+left: 318px;
+top: -214px;
 
 background: #127098;
 transform: rotate(-90deg);

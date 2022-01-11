@@ -3,6 +3,7 @@
     font-size: var(--article---titre);
     color: var(--noir);
     font-weight: 900;
+
     
 }
 
@@ -11,9 +12,25 @@ position: absolute;
 width: 340px;
 height: 13px;
 left: 7px;
+top: 147px;
+background: rgba(58, 146, 184, 0.88);
+z-index: -1;
+}
+
+
+.deco__title__article1__EN {
+    position: absolute;
+width: 270px;
+height: 13px;
+left: 7px;
 top: 137px;
 background: rgba(58, 146, 184, 0.88);
 z-index: -1;
+}
+
+
+.logo__olympe {
+    margin-bottom: -10px;
 }
 
 
@@ -23,9 +40,21 @@ position: absolute;
 width: 194px;
 height: 13px;
 left: 6px;
+top: 145px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+.deco__title__article2_A__EN {
+    z-index: -1;
+position: absolute;
+width: 300px;
+height: 13px;
+left: 8px;
 top: 135px;
 background: rgba(58, 146, 184, 0.88);
 }
+
+
 
 
 .deco__title__article2_B {
@@ -33,10 +62,23 @@ z-index: -1;
 position: absolute;
 width: 335px;
 height: 13px;
+left: 10px;
+top: 181px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+
+
+.deco__title__article2_B__EN {
+z-index: -1;
+position: absolute;
+width: 285px;
+height: 13px;
 left: 14px;
 top: 171px;
 background: rgba(58, 146, 184, 0.88);
 }
+
 
 
 .deco__title__article2_C {
@@ -45,7 +87,7 @@ position: absolute;
 width: 120px;
 height: 13px;
 left: 4px;
-top: 206px;
+top: 218px;
 background: rgba(58, 146, 184, 0.88);
 }
 
@@ -55,9 +97,21 @@ position: absolute;
 width: 248px;
 height: 13px;
 left: 6px;
+top: 145px;
+background: rgba(58, 146, 184, 0.88);
+}
+
+.deco__title__article3_A__EN {
+z-index: -1;
+position: absolute;
+width: 298px;
+height: 13px;
+left: 6px;
 top: 135px;
 background: rgba(58, 146, 184, 0.88);
 }
+
+
 
 .deco__title__article3_B {
 z-index: -1;
@@ -65,7 +119,7 @@ position: absolute;
 width: 110px;
 height: 13px;
 left: 6px;
-top: 170px;
+top: 180px;
 background: rgba(58, 146, 184, 0.88);
 }
 
@@ -78,10 +132,29 @@ background: rgba(58, 146, 184, 0.88);
     
 }
 
+
+
+
 .citation__line1 {
     position: relative;
     left: 28px;
     top: -35px;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+.citation__line1__EN {
+    width: 80%;
+      position: relative;
+    left: 28px;
+    top: -48px;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: -20px;
 }
 
 .citation__line2 {
@@ -245,18 +318,48 @@ transform: rotate(1deg);
    font-size: 12px;
    font-weight: 700;
    font-style: italic;
-   position: absolute;
-    left: 280px;
-    top: 1045px;
+   position: relative;
+    left: 270px;
+    top: -30px;
 }
 
+
+.article__invitation__galerie__EN{
+    font-family: var(--font-main);
+   font-size: 12px;
+   font-weight: 700;
+   font-style: italic;
+   position: absolute;
+    left: 280px;
+    top: 1010px;
+}
+
+
+
+
+
+
 .article__deco__invitation__galerie {
+    z-index: -1;
+    position: relative;
+    width: 35px;
+    height: 4px;
+    left: 274px;
+    top: -54px;
+    /* Bleu */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)), #127098;
+}
+
+
+
+.article__deco__invitation__galerie__EN {
     z-index: -1;
     position: absolute;
     width: 35px;
     height: 4px;
     left: 284px;
-    top: 1074px;
+    top: 1040px;
     /* Bleu */
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.2)), #127098;

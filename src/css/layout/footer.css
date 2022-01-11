@@ -41,12 +41,13 @@ margin-top: var(--space4x);
 .footer__texte__bottom,
 .footer__texte,
 .footer__texte__top {
-
+width: 275px;
   position: relative;
   left: 88px;
   top: -7.5rem;
   text-align: start;
   margin-left: 5px;
+  margin-right: 0;
   color: var(--blanc);
   
 }

@@ -13,209 +13,303 @@
 <body>
 
 
-    <header>
-        <div class="logo__simple">
-            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+    <nav class="no__scroll">
+        <div id="nav__toggle" class="no__scroll">
+
+
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+            <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+                <nav class="button__menu__casseA"></nav>
+                <nav class="button__menu__casseB"></nav>
+            </button>
+
+
+
+            <ul>
+                <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                    src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="index.html" class="li__nav__link">
+                    <li class="li__nav__design">Accueil</li>
+                </a>
+                <div class="li__nav__design__article__decoB"></div>
+                <div class="li__nav__design__article__decoA "></div>
+                <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article"
+                    alt="icone d'acceuil">
+                <a href="art_histoire_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une histoire du féminisme</li>
+                </a>
+                <a href="art_feministe_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une féministe d’aujourd’hui comme reflet du passé</li>
+                </a>
+                <a href="art_victoire_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une victoire encore lointaine</li>
+                </a>
+                <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="galerie_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Galerie</li>
+                </a>
+                <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="frise_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Frise</li>
+                </a>
+                <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="glossaire_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Glossaire</li>
+                </a>
+                <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="autreprojets_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Autre Projet</li>
+                </a>
+                <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="contact_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Contact</li>
+                </a>
+                <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="apropos_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">À propos</li>
+                </a>
+
+            </ul>
         </div>
+    </nav>
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
 
         <nav class="header__menu">
             <button class="button__header__EN">
-                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                <a href="art_victoire__EN.html"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
                         alt="icones de changement de langue en position Francaise"></a>
             </button>
-            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
-                        alt="Icone de menu déroulant"></a> </button>
+
+            <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+                <nav class="button__menu__etat-normalA"></nav>
+                <nav class="button__menu__etat-normalB"></nav>
+            </button>
         </nav>
-    </header>
+        <main>
 
-    <h1 class="titre__article">Une victoire encore lointaine</h1>
-    <div class="deco__title__article3_A"></div>
-    <div class="deco__title__article3_B"></div>
-    <p class="text__italic">Ca y'est, nous sommes en 2021 ! </p>
-    <div class="margin1"></div>
-    <p class="text__italic">Une ère suffisamment avancée où l'homme prit conscience de l'égalité évidente des sexes.</P>
-    <div class="margin1"></div>
-    <P class="text__italic"> Une ère moderne, où les mots d'Olympe de Gouge résonnent encore en chaque esprit éveillé:
-    </p>
-    <img class="deco__citation" src="assets/Img/Rectangle129.webp" alt="Rectangle démarquant une citation">
-    <p class="citation__line1">"La femme naît libre et demeure égale à l'homme </p>
-    <p class="citation__line2"> en droits."</p>
-    <div class="margin__negativeA"></div>
+            <a href="index.html"><img class="logo__olympe " src="/assets/icones/logoolympe1.svg" alt="logo olympe"></a>
+            <h1 class="titre__article">Une victoire encore lointaine</h1>
+            <div class="deco__title__article3_A"></div>
+            <div class="deco__title__article3_B"></div>
+            <p class="text__italic">Ca y'est, nous sommes en 2021 ! </p>
+            <div class="margin1"></div>
+            <p class="text__italic">Une ère suffisamment avancée où l'homme prit conscience de l'égalité évidente des
+                sexes.</P>
+            <div class="margin1"></div>
+            <P class="text__italic"> Une ère moderne, où les mots d'Olympe de Gouge résonnent encore en chaque esprit
+                éveillé:
+            </p>
+            <img class="deco__citation" src="assets/Img/Rectangle129.webp" alt="Rectangle démarquant une citation">
+            <p class="citation__line1">"La femme naît libre et demeure égale à l'homme </p>
+            <p class="citation__line2"> en droits."</p>
+            <div class="margin__negativeA"></div>
 
-    <p class="text__italic">Une ère de progrès, résultant de l'apprentissage de siècles d'erreurs passé, où plus jamais
-        une femme ne sera
-        victime, par le seul fait d'être née fille.... </p>
-    <div class="margin1"></div>
-    <!--Permet de rapprocher les paragraphes-->
+            <p class="text__italic">Une ère de progrès, résultant de l'apprentissage de siècles d'erreurs passé, où plus
+                jamais
+                une femme ne sera
+                victime, par le seul fait d'être née fille.... </p>
+            <div class="margin1"></div>
+            <!--Permet de rapprocher les paragraphes-->
 
-    <p class="text__italic">Telle aurait été mes phrases d'introduction comme Dominique Sigaud, autrice de "La
-        malédiction d'être fille"
-        aurait aimé les lire mais elle est la mieux placé pour savoir à quel point, tous ceci n'est que utopie. </p>
+            <p class="text__italic">Telle aurait été mes phrases d'introduction comme Dominique Sigaud, autrice de "La
+                malédiction d'être fille"
+                aurait aimé les lire mais elle est la mieux placé pour savoir à quel point, tous ceci n'est que utopie.
+            </p>
 
 
 
-    <main>
+            <main>
 
-        <figure>
-            <img class="article__image__Dominique" src="assets/Img/Rectangle128.webp" alt="Conférence avec Dominique Sigaud
+                <figure>
+                    <img class="article__image__Dominique" src="assets/Img/Rectangle128.webp" alt="Conférence avec Dominique Sigaud
                      dans le cadre des Grandes rencontres 2020">
-            <figcaption>Conférence avec Dominique Sigaud
-                dans le cadre des Grandes rencontres 2020</figcaption>
-        </figure>
+                    <figcaption>Conférence avec Dominique Sigaud
+                        dans le cadre des Grandes rencontres 2020</figcaption>
+                </figure>
 
 
-        <article>
-            <h2 class="undertitle__article">L'oeuvre d'une vie</h2>
+                <article>
+                    <h2 class="undertitle__article">L'oeuvre d'une vie</h2>
 
-            <p class="article-text">Depuis le début des années 80 Dominique Sigaud parcours le monde entiers en quête de
-                compréhension sur
-                les
-                cultures qui lui sont inconnues. </p>
+                    <p class="article-text">Depuis le début des années 80 Dominique Sigaud parcours le monde entiers en
+                        quête de
+                        compréhension sur
+                        les
+                        cultures qui lui sont inconnues. </p>
 
-            <p class="article-text"> Ancien grand reporter , elle décide de quitter son emploie au NouvelObs pour des
-                raison politique et de
-                consacrer pleinement sa vie à l'étude du monde, sur le terrain.
+                    <p class="article-text"> Ancien grand reporter , elle décide de quitter son emploie au NouvelObs
+                        pour des
+                        raison politique et de
+                        consacrer pleinement sa vie à l'étude du monde, sur le terrain.
 
-            <p class="article-text"> Son objectif n'est autre que faire découvrir, comprendre et partager les cultures
-                de pays (souvent en
-                situation de conflits) qui suscite en elle l'incompréhension. Pour elle la meilleur manière de
-                comprendre un
-                pays n'est autre que de si rendre directement et d'enquêter. </p>
+                    <p class="article-text"> Son objectif n'est autre que faire découvrir, comprendre et partager les
+                        cultures
+                        de pays (souvent en
+                        situation de conflits) qui suscite en elle l'incompréhension. Pour elle la meilleur manière de
+                        comprendre un
+                        pays n'est autre que de si rendre directement et d'enquêter. </p>
 
-            <p class="article-text"> De nature profondément féministe et humaniste, elle décide de se servir de ses
-                talents de journaliste
-                ainsi
-                que de sa culture acquise durant ses précédent périple pour écrire un livre traitant de la situation
-                déplorable traversé par beaucoup de fille dans le monde.</p>
+                    <p class="article-text"> De nature profondément féministe et humaniste, elle décide de se servir de
+                        ses
+                        talents de journaliste
+                        ainsi
+                        que de sa culture acquise durant ses précédent périple pour écrire un livre traitant de la
+                        situation
+                        déplorable traversé par beaucoup de fille dans le monde.</p>
 
-            <p class="article-text"> En écrivant les premières ligne d'introduction de son brouillon au courant de 2016
-                la journaliste était
-                encore loin de s'imaginer que la situations serait si grave.
-            </p>
-        </article>
+                    <p class="article-text"> En écrivant les premières ligne d'introduction de son brouillon au courant
+                        de 2016
+                        la journaliste était
+                        encore loin de s'imaginer que la situations serait si grave.
+                    </p>
+                </article>
 
-        <article>
-            <h2 class="undertitle__article">Un but informatif</h2>
+                <article>
+                    <h2 class="undertitle__article">Un but informatif</h2>
 
-            <p class="article-text">Au fur et à mesure de ses voyages, Dominique Sigaud pus récolter des centaines de
-                témoignages, tous plus
-                choquants les uns que les autres, à telle point que durant un temps, ses journée de travail ne pouvait
-                commencer autrement que par des pleures systématique au réveille.</p>
+                    <p class="article-text">Au fur et à mesure de ses voyages, Dominique Sigaud pus récolter des
+                        centaines de
+                        témoignages, tous plus
+                        choquants les uns que les autres, à telle point que durant un temps, ses journée de travail ne
+                        pouvait
+                        commencer autrement que par des pleures systématique au réveille.</p>
 
-            <p class="article-text"> Son objectif premier durant la rédaction de ce récit était de réussir à faire
-                ouvrir les yeux du monde
-                sur
-                une malheureuse et macabre réalité. </p>
+                    <p class="article-text"> Son objectif premier durant la rédaction de ce récit était de réussir à
+                        faire
+                        ouvrir les yeux du monde
+                        sur
+                        une malheureuse et macabre réalité. </p>
 
-            <p class="article-text"> Un constat de 230 pages sincère et brut qui ne perds pas de temps pour nous
-                apprendre que non, les viols
-                à
-                répétition; les mutilations sexuelles ainsi que les mariages forcées, sont toujours une réalité
-                désastreuse
-                subit par des centaines de milliers de filles à travers le monde et ce même dans des pays considéré
-                comme
-                "développé".</p>
+                    <p class="article-text"> Un constat de 230 pages sincère et brut qui ne perds pas de temps pour nous
+                        apprendre que non, les viols
+                        à
+                        répétition; les mutilations sexuelles ainsi que les mariages forcées, sont toujours une réalité
+                        désastreuse
+                        subit par des centaines de milliers de filles à travers le monde et ce même dans des pays
+                        considéré
+                        comme
+                        "développé".</p>
 
-            <p class="article-text"> Une épreuve longue de 3ans pour que plus jamais, au sujet de ces milliers de vie
-                détruite, nous ne
-                puissions
-                dire "Je ne savais pas".
-            </p>
-        </article>
-
-
-        <article>
-            <h2 class="undertitle__article">Un combat en vain ?</h2>
-            <figure>
-                <img class="article__image__feministes" src="assets/Img/Rectangle131.webp"
-                    alt="Dessin de pluisuers féministes">
-                <figcaption>Dessin de plusieurs féministes
-                </figcaption>
-            </figure>
-
-            <p class="article-text">Après la lecture du livre de Dominique Sigaud, la perte d'espoir en toute causes
-                féministe est légitime,
-                mais
-                la situation désastreuse subit par ses milliers de voix silencieuse ne doit pas faire oublier tous le
-                chemins parcourus depuis le début du mouvement.
-
-            <p class="article-text"> Depuis la déclaration des droits de la femme et de la citoyenne par Olympe de
-                Gouges, jusqu'au mouvement
-                féminisme moderne telle que #metoo, la lutte des égalité homme femme n'a cessé d'évoluer et d'apporter
-                progrès et solution à l'avenir du monde. </p>
-
-            <p class="article-text"> En laissant Ada Lovelace étudier d'égale à égale les mathématiques avec Charles
-                Babbage le féminisme
-                aida à
-                la construction du monde numérique que nous vivons aujourd'hui, en donnant le droit à Margaret Hamilton
-                de
-                rédiger le programme informatique des mission Apollo le féminisme à permit à l'humanité de poser le pied
-                sur
-                la lune, et en laissant le droit à Marie Curie de réaliser ses expérience le féminisme permit de
-                progresser
-                dans les domaines de la science et de la médecine. </p>
-
-            <p class="article-text"> Depuis toujours, sans que nous n'en rendant compte le féminisme à contribuée à
-                travers de grandes
-                avancées à
-                bâtir ce que le monde est aujourd'hui. </p>
-
-            <p class="article-text"> Quelles serait aujourd'hui nos avancé dans les domaines de l'informatique, des
-                science, de l'art, du
-                sport
-                ou de l'ingénierie... sans le génie des femmes ? La réponse tiens en deux mots: Bien moindre. </p>
-
-            <p class="article-text"> Le livre de Dominique Sigaud n'a pas pour vocation à susciter l'abandon, mais au
-                contraire être une
-                justification supplémentaire à la lutte féministe, ainsi qu'un cri d'alerte au oreilles du monde. </p>
-
-            <p class="article-text"> La victoire est encore lointaine mais elle continuera de s'approcher tant que le
-                combat continuera.</p>
-
-        </article>
+                    <p class="article-text"> Une épreuve longue de 3ans pour que plus jamais, au sujet de ces milliers
+                        de vie
+                        détruite, nous ne
+                        puissions
+                        dire "Je ne savais pas".
+                    </p>
+                </article>
 
 
-        <article class="other__article__space">
-            <h3 class="other__articles">Autres Articles</h3>
-            <div class="deco__otherarticle__article1"></div>
-            <img class="fleche__article__footer" src="assets/Img/Arrow 2.png"
-                alt="Fleche invitant à cliquer sur les prochains articles">
+                <article>
+                    <h2 class="undertitle__article">Un combat en vain ?</h2>
+                    <figure>
+                        <img class="article__image__feministes" src="assets/Img/Rectangle131.webp"
+                            alt="Dessin de pluisuers féministes">
+                        <figcaption>Dessin de plusieurs féministes
+                        </figcaption>
+                    </figure>
 
-            <div class="other__article__footer">
-                <ul class="other__article__space__arrow">
-                    <div class="article__deco__li__footer"></div>
-                    <li class="design__link__otherarticle"><a class="color__a__article" href="art_histoire_FR.html">Une
-                            histoire du féminisme</a></li>
-                    <div class="article__deco__li__footer"></div>
-                    <li class="design__link__otherarticle"><a class="color__a__article" href="art_feministe_FR.html">Une
-                            féministe d'aujourd’hui
-                            comme reflet du passé</a></li>
-                </ul>
-            </div>
-        </article>
+                    <p class="article-text">Après la lecture du livre de Dominique Sigaud, la perte d'espoir en toute
+                        causes
+                        féministe est légitime,
+                        mais
+                        la situation désastreuse subit par ses milliers de voix silencieuse ne doit pas faire oublier
+                        tous le
+                        chemins parcourus depuis le début du mouvement.
 
-    </main>
+                    <p class="article-text"> Depuis la déclaration des droits de la femme et de la citoyenne par Olympe
+                        de
+                        Gouges, jusqu'au mouvement
+                        féminisme moderne telle que #metoo, la lutte des égalité homme femme n'a cessé d'évoluer et
+                        d'apporter
+                        progrès et solution à l'avenir du monde. </p>
 
-    <footer class="footer__space">
+                    <p class="article-text"> En laissant Ada Lovelace étudier d'égale à égale les mathématiques avec
+                        Charles
+                        Babbage le féminisme
+                        aida à
+                        la construction du monde numérique que nous vivons aujourd'hui, en donnant le droit à Margaret
+                        Hamilton
+                        de
+                        rédiger le programme informatique des mission Apollo le féminisme à permit à l'humanité de poser
+                        le pied
+                        sur
+                        la lune, et en laissant le droit à Marie Curie de réaliser ses expérience le féminisme permit de
+                        progresser
+                        dans les domaines de la science et de la médecine. </p>
 
-        <article class="footer__menu">
-            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
-            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
-            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
-        </article>
+                    <p class="article-text"> Depuis toujours, sans que nous n'en rendant compte le féminisme à
+                        contribuée à
+                        travers de grandes
+                        avancées à
+                        bâtir ce que le monde est aujourd'hui. </p>
+
+                    <p class="article-text"> Quelles serait aujourd'hui nos avancé dans les domaines de l'informatique,
+                        des
+                        science, de l'art, du
+                        sport
+                        ou de l'ingénierie... sans le génie des femmes ? La réponse tiens en deux mots: Bien moindre.
+                    </p>
+
+                    <p class="article-text"> Le livre de Dominique Sigaud n'a pas pour vocation à susciter l'abandon,
+                        mais au
+                        contraire être une
+                        justification supplémentaire à la lutte féministe, ainsi qu'un cri d'alerte au oreilles du
+                        monde. </p>
+
+                    <p class="article-text"> La victoire est encore lointaine mais elle continuera de s'approcher tant
+                        que le
+                        combat continuera.</p>
+
+                </article>
 
 
-        <div class="mentionlegale">
+                <article class="other__article__space">
+                    <h3 class="other__articles">Autres Articles</h3>
+                    <div class="deco__otherarticle__article1"></div>
+                    <img class="fleche__article__footer" src="assets/Img/Arrow 2.png"
+                        alt="Fleche invitant à cliquer sur les prochains articles">
 
-            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
-            <div class="footer__mentionlegale__deco"> </div>
-            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
-            <p class="footer__texte">pédagogique au département MMI de</p>
-            <p class="footer__texte__bottom"> Montbéliard.</p>
-        </div>
+                    <div class="other__article__footer">
+                        <ul class="other__article__space__arrow">
+                            <div class="article__deco__li__footer"></div>
+                            <li class="design__link__otherarticle"><a class="color__a__article"
+                                    href="art_histoire_FR.html">Une
+                                    histoire du féminisme</a></li>
+                            <div class="article__deco__li__footer"></div>
+                            <li class="design__link__otherarticle"><a class="color__a__article"
+                                    href="art_feministe_FR.html">Une
+                                    féministe d'aujourd’hui
+                                    comme reflet du passé</a></li>
+                        </ul>
+                    </div>
+                </article>
 
-    </footer>
+            </main>
+
+            <footer class="footer__space">
+
+                <article class="footer__menu">
+                    <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+                    <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
+                            projets</button>
+                    <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
+                </article>
+
+
+                <div class="mentionlegale">
+
+                    <img class="footer__img" src="assets/icones/mmilogo.svg"
+                        alt="Logo du département MMI de Montbéliard">
+                    <div class="footer__mentionlegale__deco"> </div>
+                    <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+                    <p class="footer__texte">pédagogique au département MMI de</p>
+                    <p class="footer__texte__bottom"> Montbéliard.</p>
+                </div>
+
+            </footer>
 
 
 

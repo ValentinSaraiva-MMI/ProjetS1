@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{actif: false}" :class="actif && 'no__scroll'">
 <!-- Validé W3C  -->
 
 <head>
@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/component/carrousel.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script scr="https://animejs.com/lib/anime.min.js"></script>
+    <script src="/src/js/carrousel.js"></script>
     <title>Olympe</title>
 </head>
 
 <body>
 
-    <nav>
-        <div id="nav__toggle" class="">
+    <nav class="no__scroll">
+        <div id="nav__toggle" class="no__scroll">
 
 
             <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
@@ -125,27 +128,78 @@
 
     <div class="presentation__article">
         <h1 class="presentation__undertitle">Articles</h1>
-        <img class="article__arrow" src="assets/img/Fleche présentation .webp" alt="Fleche explicitant un carouselle ">
+
     </div>
 
-    <h2> Une histoire du féminisme </h2>
-    <p>De Olympe de Gouge jusqu’à l'ère moderne, découvrez comment le féminisme est devenu un des mouvements les
-        plus suivis de l'Histoire</p>
-    <a href="art_histoire_FR.html"><img src="assets/Img/Rectangle37.webp"
-            alt="Image illustrant le premier article, permet de le rejoindre en cliquant dessus" /></a>
-
-    <h2> Une féministe d’aujourd’hui comme reflet du passé </h2>
-    <p>Mathématicienne de génie et pionnières dans l’âme, découvrez comment à travers le temps, deux femmes se
-        retrouvent liées par l’Histoire d’un mouvement</p>
-    <a href="art_feministe_FR.html"><img src="assets/Img/Rectangle37(1).webp"
-            alt="Image illustrant le deuxieme article" /></a>
 
 
-    <h2> Une victoire encore lointaine </h2>
-    <p>Le constat glaçant d’une journaliste quant à la situation des jeunes filles dans le monde.</p>
-    <a href="art_victoire_FR.html"><img src="assets/Img/Rectangle37(2).webp"
-            alt="Image illustrant le troisiéme article" /></a>
-    </article>
+
+    <div class="carrousel">
+        <ul class="images listUnstyles">
+            <li><a href="art_histoire_FR.html"><img class="img_carrousel"
+                        src="assets/Img/carrouselFR/HistoireFeminisme.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a>
+            </li>
+            <li><a href="art_feministe_FR.html"><img class="img_carrousel"
+                        src="assets/Img/carrouselFR/RefletDuPassé.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a></li>
+            <li><a href="art_victoire_FR.html"><img class="img_carrousel"
+                        src="assets/Img/carrouselFR/VictoireEncoreLointaine.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="pagination carrousel__boutons listUnstyles">
+            <li class="precedente carrousel__bouton"><button type="button">
+                    <p class="carrousel__fleche">←</p>
+                </button></li>
+            <li class="suivante carrousel__bouton"><button type="button">
+                    <p class="carrousel__fleche">→</p>
+                </button></li>
+        </ul>
+    </div>
+
+
+    <script>
+        carrousel();
+    </script>
+
+
+
+
+
+    <!--  
+
+    <section>
+
+
+        <h2> Une histoire du féminisme </h2>
+        <p>De Olympe de Gouge jusqu’à l'ère moderne, découvrez comment le féminisme est devenu un des mouvements les
+            plus suivis de l'Histoire</p>
+        <a href="art_histoire_FR.html"><img src="assets/Img/Rectangle37.webp"
+                alt="Image illustrant le premier article, permet de le rejoindre en cliquant dessus" /></a>
+
+        <h2> Une féministe d’aujourd’hui comme reflet du passé </h2>
+        <p>Mathématicienne de génie et pionnières dans l’âme, découvrez comment à travers le temps, deux femmes se
+            retrouvent liées par l’Histoire d’un mouvement</p>
+        <a href="art_feministe_FR.html"><img src="assets/Img/Rectangle37(1).webp"
+                alt="Image illustrant le deuxieme article" /></a>
+
+
+        <h2> Une victoire encore lointaine </h2>
+        <p>Le constat glaçant d’une journaliste quant à la situation des jeunes filles dans le monde.</p>
+        <a href="art_victoire_FR.html"><img src="assets/Img/Rectangle37(2).webp"
+                alt="Image illustrant le troisiéme article" /></a>
+        </article>
+
+
+    </section>
+
+
+-->
+
+
 
     <div class="presentation__article">
         <article>
@@ -170,9 +224,7 @@
     </div>
 
     </article>
-    <a href="404.html">404 enter
 
-    </a>
 
     <footer class="footer__space">
 

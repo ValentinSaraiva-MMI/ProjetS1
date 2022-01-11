@@ -14,9 +14,22 @@ h1 {
     position: relative;
     left: 20px;
     top: 0px;
-    margin-bottom: -30px;
+  
     margin-left: 0;
 }
+
+.Title__Frise {
+    margin-bottom: -20px;
+    margin-top: -30px;
+}
+
+.Title__Frise__EN {
+    margin-bottom: -20px;
+    margin-top: -30px;
+    margin-left: 55px;
+}
+
+
 
 h2 {
      font-family: var(--font-main);
@@ -28,15 +41,43 @@ h2 {
 }
 
 .deco__title {
+z-index: 5;
     position: relative;
 width: 4px;
-height: 90%;
-left: 74px;
-top: -60px;
+height: 60px;
+left: 4px;
+top: -50px;
 background: #127098;
 }
 
+
+.deco__title__EN{
+z-index: 5;
+    position: relative;
+width: 4px;
+height: 35px;
+left: 65px;
+top: -20px;
+background: #127098;
+}
+
+
 .deco__udertitle__A
+{
+    position: relative;
+width: 80%;
+height: 4px;
+left: 40px;
+top: 20px;
+
+background: #127098;
+}
+
+
+
+
+
+.deco__udertitle__A__EN
 {
     position: relative;
 width: 80%;

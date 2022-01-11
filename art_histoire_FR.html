@@ -12,188 +12,271 @@
 
 <body>
 
-    <header>
-        <div class="logo__simple">
-            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+    <nav class="no__scroll">
+        <div id="nav__toggle" class="no__scroll">
+
+
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+            <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+                <nav class="button__menu__casseA"></nav>
+                <nav class="button__menu__casseB"></nav>
+            </button>
+
+
+
+            <ul>
+                <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                    src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="index.html" class="li__nav__link">
+                    <li class="li__nav__design">Accueil</li>
+                </a>
+                <div class="li__nav__design__article__decoB"></div>
+                <div class="li__nav__design__article__decoA "></div>
+                <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article"
+                    alt="icone d'acceuil">
+                <a href="art_histoire_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une histoire du féminisme</li>
+                </a>
+                <a href="art_feministe_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une féministe d’aujourd’hui comme reflet du passé</li>
+                </a>
+                <a href="art_victoire_FR.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">Une victoire encore lointaine</li>
+                </a>
+                <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="galerie_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Galerie</li>
+                </a>
+                <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="frise_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Frise</li>
+                </a>
+                <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="glossaire_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Glossaire</li>
+                </a>
+                <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="autreprojets_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Autre Projet</li>
+                </a>
+                <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="contact_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">Contact</li>
+                </a>
+                <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="apropos_FR.html" class="li__nav__link">
+                    <li class="li__nav__design">À propos</li>
+                </a>
+
+            </ul>
         </div>
+    </nav>
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
 
         <nav class="header__menu">
             <button class="button__header__EN">
-                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                <a href="art_histoire_EN.html"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
                         alt="icones de changement de langue en position Francaise"></a>
             </button>
-            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
-                        alt="Icone de menu déroulant"></a> </button>
+
+            <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+                <nav class="button__menu__etat-normalA"></nav>
+                <nav class="button__menu__etat-normalB"></nav>
+            </button>
         </nav>
-    </header>
 
+        <!--Titre article -->
 
-    <!--Titre article -->
-    <h1 class="titre__article">Une histoire du féminisme</h1>
+        <a href="index.html"><img class="logo__olympe " src="/assets/icones/logoolympe1.svg" alt="logo olympe"></a>
+        <h1 class="titre__article">Une histoire du féminisme</h1>
 
-    <div class="deco__title__article1"></div>
-    <p class="text__italic  ">Le féminisme est un mouvement luttant contre les inégalités sexistes.</p>
-    <p class="text__italic "> De par sa constante évolution et adaptation , il arbore de nombreux visages
-        selon les
-        pays et les époques.
-    <p class="text__italic ">Il conserve néanmoins les mêmes objectifs.</p>
-    <p class="text__italic "> L’espérance d’un futur plus juste dans les relations homme/femmes.</p>
-
-
-
-
-    <main>
-        <!--Sous titre-->
-        <h2 class="undertitle__article">Les débuts discutés du féminisme</h2>
-
-        <p class="article-text">De nombreuses dates dans l’Histoire sont susceptible d’être considérées comme LE
-            marqueur de naissance à la
-            lutte contre les discrimination sexistes, désigné par la suite comme mouvement féministe.
-        </p>
-
-        <ul class="normal">
-            <li>1791 : Publication de la « Déclaration des Droits de la Femme et de la Citoyenne » par Olympe de gouges.
-            </li>
-            <li>1830: Création attribué du mots « féminisme » au penseur Français Charles Fourrier, afin de mettre un
-                mots
-                sur les discriminations opposant hommes et femmes. (Origine contesté avec Alexandre Dumas fils, en 1872)
-            </li>
-            <li>1837 : Entré du mot « féminisme » dans le dictionnaire français.</li>
-        </ul>
-
-        <p class="article-text">Mais si son commencement n’est pas fixé précisément dans l’Histoire, cela n'empêchera en
-            rien au féminisme de
-            devenir un des combats les plus défendus et suivies de l’Histoire. En réussissant à réunir une multitude de
-            causes sous une même bannière.</p>
-
-        <!--Sous titre-->
-        <h2 class="undertitle__article">L’organisation d’un mouvement mondial</h2>
-        <p class="article-text">Malgré les nombreuses facettes de ce mouvement d’envergure international, il est
-            possible de retracer à
-            travers les décennies les grands axes de l’histoire du féminisme.</p>
-
-        <p class="article-text">Son commencement prend place dès la fin du moyen âge lorsque divers auteurs remettent en
-            cause la place
-            accordée aux femmes dans la société, mais il mettra plusieurs siècles à se structurer. </p>
-
-        <p class="article-text">A partir de là nous découpons généralement ce mouvement en trois vagues principales dans
-            lesquelles des
-            revendications précises sont mises en avant et où des courant prennent l’ascendant sur les autres. </p>
-
-        <p class="article-text">A noter que de plus en plus, une 4 -ème vague est évoquée, mais trop récente aujourd’hui
-            pour être reconnue
-            comme majeures du mouvement.</p>
+        <div class="deco__title__article1"></div>
+        <p class="text__italic  ">Le féminisme est un mouvement luttant contre les inégalités sexistes.</p>
+        <p class="text__italic "> De par sa constante évolution et adaptation , il arbore de nombreux visages
+            selon les
+            pays et les époques.
+        <p class="text__italic ">Il conserve néanmoins les mêmes objectifs.</p>
+        <p class="text__italic "> L’espérance d’un futur plus juste dans les relations homme/femmes.</p>
 
 
 
-        <p class="article-text"> <strong>La 1er vague de féminisme,</strong>concerne les mouvements féministes de la
-            fin du XIXe jusqu’au
-            début du XXe siècle. Parmi eux , les mondialement connus « suffragets ».
-        </p>
 
-        <p class="article-text">Leurs principales revendication était surtout accès sur l’émancipation social et
-            politique ainsi que des
-            reforme juridique, afin d’améliorer la place de la femme dans le secteur publique en obtenant des droits
-            bien précis tels que le droit de vote et le droit au travail. </p>
+        <main>
+            <!--Sous titre-->
+            <h2 class="undertitle__article">Les débuts discutés du féminisme</h2>
 
-        <p class="article-text"> Leurs exigences précises permit d'homogénéiser le mouvement et de réduire l'apparition
-            de conflits interne
-            au sein de celui ci. </p>
+            <p class="article-text">De nombreuses dates dans l’Histoire sont susceptible d’être considérées comme LE
+                marqueur de naissance à la
+                lutte contre les discrimination sexistes, désigné par la suite comme mouvement féministe.
+            </p>
 
-        <p class="article-text"> À cette époque, seulement une minorité de personnes remettait en cause les rôles
-            traditionnels occupés par
-            les femmes. </p>
+            <ul class="normal">
+                <li>1791 : Publication de la « Déclaration des Droits de la Femme et de la Citoyenne » par Olympe de
+                    gouges.
+                </li>
+                <li>1830: Création attribué du mots « féminisme » au penseur Français Charles Fourrier, afin de mettre
+                    un
+                    mots
+                    sur les discriminations opposant hommes et femmes. (Origine contesté avec Alexandre Dumas fils, en
+                    1872)
+                </li>
+                <li>1837 : Entré du mot « féminisme » dans le dictionnaire français.</li>
+            </ul>
+
+            <p class="article-text">Mais si son commencement n’est pas fixé précisément dans l’Histoire, cela
+                n'empêchera en
+                rien au féminisme de
+                devenir un des combats les plus défendus et suivies de l’Histoire. En réussissant à réunir une multitude
+                de
+                causes sous une même bannière.</p>
+
+            <!--Sous titre-->
+            <h2 class="undertitle__article">L’organisation d’un mouvement mondial</h2>
+            <p class="article-text">Malgré les nombreuses facettes de ce mouvement d’envergure international, il est
+                possible de retracer à
+                travers les décennies les grands axes de l’histoire du féminisme.</p>
+
+            <p class="article-text">Son commencement prend place dès la fin du moyen âge lorsque divers auteurs
+                remettent en
+                cause la place
+                accordée aux femmes dans la société, mais il mettra plusieurs siècles à se structurer. </p>
+
+            <p class="article-text">A partir de là nous découpons généralement ce mouvement en trois vagues principales
+                dans
+                lesquelles des
+                revendications précises sont mises en avant et où des courant prennent l’ascendant sur les autres. </p>
+
+            <p class="article-text">A noter que de plus en plus, une 4 -ème vague est évoquée, mais trop récente
+                aujourd’hui
+                pour être reconnue
+                comme majeures du mouvement.</p>
 
 
-        <figure>
-            <img src="assets/Img/Rectangle119.webp" alt="Manifestation pour le droit de vote des femmes en France">
-            <figcaption>Manifestation pour le droit de vote des femmes. </figcaption>
-        </figure>
 
-        <p class="article-text"><strong> La 2ème vague de féminisme</strong> prend ses marques des années 60 à 70, au
-            états unies.</p>
+            <p class="article-text"> <strong>La 1er vague de féminisme,</strong>concerne les mouvements féministes de la
+                fin du XIXe jusqu’au
+                début du XXe siècle. Parmi eux , les mondialement connus « suffragets ».
+            </p>
 
-        <p class="article-text"> Il est dans sa conceptualisation plus extrême que son prédécesseur car le mouvement
-            prends conscience de
-            l’impossibilité d’une égalité totale entre les sexes dans le système actuelles jugés « patriarcale ». </p>
+            <p class="article-text">Leurs principales revendication était surtout accès sur l’émancipation social et
+                politique ainsi que des
+                reforme juridique, afin d’améliorer la place de la femme dans le secteur publique en obtenant des droits
+                bien précis tels que le droit de vote et le droit au travail. </p>
 
-        <p class="article-text"> La solution est donc de le renverser puis en bâtir un nouveaux, autour de nouvelle
-            valeur et objectifs plus
-            larges que la 1er : La sexualité, la famille, les droits à disposer de leurs corps (procréation). </p>
+            <p class="article-text"> Leurs exigences précises permit d'homogénéiser le mouvement et de réduire
+                l'apparition
+                de conflits interne
+                au sein de celui ci. </p>
 
-        <p class="article-text">Il pointe le doigts également sur les violences faite au femme, dans le foyer et dans la
-            rue.</p>
-
-        <figure>
-            <img src="assets/Img/Rectangle120.webp" alt="Manifestation pour l’égalité entre les Hommes et les femmes. ">
-            <figcaption>Manifestation pour l’égalité entre les Hommes et les femmes. </figcaption>
-        </figure>
+            <p class="article-text"> À cette époque, seulement une minorité de personnes remettait en cause les rôles
+                traditionnels occupés par
+                les femmes. </p>
 
 
-        <p class="article-text"> <strong> La 3ème vague </strong> débute dans les années 80, elle est caractérisée non
-            pas par un ensemble
-            structuré et précis mais par un vaste ensemble de mouvements politiques et artistiques.</p>
+            <figure>
+                <img src="assets/Img/Rectangle119.webp" alt="Manifestation pour le droit de vote des femmes en France">
+                <figcaption>Manifestation pour le droit de vote des femmes. </figcaption>
+            </figure>
 
-        <p class="article-text"> Elle a la particularité d’être porté en majorité par des femmes issues de différents
-            type de minorités :
-            prostitué, transgenre, femmes racisé, lesbiennes etc… </p>
+            <p class="article-text"><strong> La 2ème vague de féminisme</strong> prend ses marques des années 60 à 70,
+                au
+                états unies.</p>
 
-        <p class="article-text"> Les résultats issues de cette vague sont discutés, car malgré la prise de confiance et
-            l’intégration des
-            femmes issues de minorités au sein du mouvement. Elle aura causé un éclatement de l’identité « femmes » loué
-            par la vague précédente. </p>
+            <p class="article-text"> Il est dans sa conceptualisation plus extrême que son prédécesseur car le mouvement
+                prends conscience de
+                l’impossibilité d’une égalité totale entre les sexes dans le système actuelles jugés « patriarcale ».
+            </p>
 
-        <p class="article-text"> Cela s'expliquerait en raison du manque d’un objectif commun et d’une organisation
-            structurée. Ce qui
-            faisait justement la force et l'unité des élans précédents.</p>
+            <p class="article-text"> La solution est donc de le renverser puis en bâtir un nouveaux, autour de nouvelle
+                valeur et objectifs plus
+                larges que la 1er : La sexualité, la famille, les droits à disposer de leurs corps (procréation). </p>
 
-        <P class="article-text"> Les féministes de la premières vagues se battait pour l’obtention du droits de vote,
-            celle de la deuxième
-            vagues, la fin des violences et des discrimination à l’égard des femmes mais les militantes de la 3ème se
-            sont dispersés dans une multitude de combats différents défavorisant la construction.</p>
+            <p class="article-text">Il pointe le doigts également sur les violences faite au femme, dans le foyer et
+                dans la
+                rue.</p>
 
-        <article class="other__article__space">
-            <h3 class="other__articles">Autres Articles</h3>
-            <div class="deco__otherarticle__article1"></div>
-            <img class="fleche__article__footer" src="assets/Img/Arrow 2.png"
-                alt="Fleche invitant à cliquer sur les prochains articles">
+            <figure>
+                <img src="assets/Img/Rectangle120.webp"
+                    alt="Manifestation pour l’égalité entre les Hommes et les femmes. ">
+                <figcaption>Manifestation pour l’égalité entre les Hommes et les femmes. </figcaption>
+            </figure>
 
-            <div class="other__article__footer">
-                <ul class="other__article__space__arrow">
-                    <div class="article__deco__li__footer"></div>
-                    <li class="design__link__otherarticle"><a class="color__a__article" href="art_victoire_FR.html">Une
-                            victoire encore
-                            lointaine</a></li>
-                    <div class="article__deco__li__footer"></div>
-                    <li class="design__link__otherarticle"><a class="color__a__article" href="art_feministe_FR.html">Une
-                            féministe d'aujourd’hui
-                            comme reflet du passé</a></li>
-                </ul>
+
+            <p class="article-text"> <strong> La 3ème vague </strong> débute dans les années 80, elle est caractérisée
+                non
+                pas par un ensemble
+                structuré et précis mais par un vaste ensemble de mouvements politiques et artistiques.</p>
+
+            <p class="article-text"> Elle a la particularité d’être porté en majorité par des femmes issues de
+                différents
+                type de minorités :
+                prostitué, transgenre, femmes racisé, lesbiennes etc… </p>
+
+            <p class="article-text"> Les résultats issues de cette vague sont discutés, car malgré la prise de confiance
+                et
+                l’intégration des
+                femmes issues de minorités au sein du mouvement. Elle aura causé un éclatement de l’identité « femmes »
+                loué
+                par la vague précédente. </p>
+
+            <p class="article-text"> Cela s'expliquerait en raison du manque d’un objectif commun et d’une organisation
+                structurée. Ce qui
+                faisait justement la force et l'unité des élans précédents.</p>
+
+            <P class="article-text"> Les féministes de la premières vagues se battait pour l’obtention du droits de
+                vote,
+                celle de la deuxième
+                vagues, la fin des violences et des discrimination à l’égard des femmes mais les militantes de la 3ème
+                se
+                sont dispersés dans une multitude de combats différents défavorisant la construction.</p>
+
+            <article class="other__article__space">
+                <h3 class="other__articles">Autres Articles</h3>
+                <div class="deco__otherarticle__article1"></div>
+                <img class="fleche__article__footer" src="assets/Img/Arrow 2.png"
+                    alt="Fleche invitant à cliquer sur les prochains articles">
+
+                <div class="other__article__footer">
+                    <ul class="other__article__space__arrow">
+                        <div class="article__deco__li__footer"></div>
+                        <li class="design__link__otherarticle"><a class="color__a__article"
+                                href="art_victoire_FR.html">Une
+                                victoire encore
+                                lointaine</a></li>
+                        <div class="article__deco__li__footer"></div>
+                        <li class="design__link__otherarticle"><a class="color__a__article"
+                                href="art_feministe_FR.html">Une
+                                féministe d'aujourd’hui
+                                comme reflet du passé</a></li>
+                    </ul>
+                </div>
+            </article>
+
+        </main>
+
+        <footer class="footer__space">
+
+            <article class="footer__menu">
+                <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+                <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
+                        projets</button>
+                <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
+            </article>
+
+
+            <div class="mentionlegale">
+
+                <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+                <div class="footer__mentionlegale__deco"> </div>
+                <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+                <p class="footer__texte">pédagogique au département MMI de</p>
+                <p class="footer__texte__bottom"> Montbéliard.</p>
             </div>
-        </article>
 
-    </main>
-
-    <footer class="footer__space">
-
-        <article class="footer__menu">
-            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
-            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
-            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
-        </article>
-
-
-        <div class="mentionlegale">
-
-            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
-            <div class="footer__mentionlegale__deco"> </div>
-            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
-            <p class="footer__texte">pédagogique au département MMI de</p>
-            <p class="footer__texte__bottom"> Montbéliard.</p>
-        </div>
-
-    </footer>
+        </footer>
 
 
 </body>

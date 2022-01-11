@@ -1,0 +1,55 @@
+.images {
+    margin:0;
+    padding:0;
+    height:auto;
+    width: 2000px;
+}
+
+.images li {
+    float:left;
+    height:auto;
+    width:365px;
+    margin:20px 10px 0 0;
+    padding: 0;
+}
+
+/* La div carrousel n'affiche que l'élément Reference*/
+.carrousel {
+    width:365px;
+    height: auto;
+    overflow:hidden;
+}
+
+.img_carrousel{
+    border-radius: 10px;
+}
+
+.carrousel__boutons{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.carrousel__bouton{
+    margin: 0 20px;
+    text-decoration: none;
+     
+}
+
+.carrousel__fleche{
+    margin: 0;
+    font-size: 3rem;
+  
+}
+
+.cadre__arrow {
+    border: solid 3px  #3A92B8;
+    border-radius: 10px;
+    height: 30px;
+    width: 50%;
+ position: relative;
+ top: -39px;
+ left: 87px;
+
+}

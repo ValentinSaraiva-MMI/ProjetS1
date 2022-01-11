@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Validé W3C  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout/galerie.css">
+    <title>Galerie</title>
+</head>
+<nav class="no__scroll">
+    <div id="nav__toggle" class="no__scroll">
+
+
+        <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+            src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+        <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+            <nav class="button__menu__casseA"></nav>
+            <nav class="button__menu__casseB"></nav>
+        </button>
+
+
+
+        <ul>
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="index.html" class="li__nav__link">
+                <li class="li__nav__design">Accueil</li>
+            </a>
+            <div class="li__nav__design__article__decoB"></div>
+            <div class="li__nav__design__article__decoA "></div>
+            <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article" alt="icone d'acceuil">
+            <a href="art_histoire_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une histoire du féminisme</li>
+            </a>
+            <a href="art_feministe_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une féministe d’aujourd’hui comme reflet du passé</li>
+            </a>
+            <a href="art_victoire_FR.html" class="li__nav__link__article">
+                <li class="li__nav__design__article">Une victoire encore lointaine</li>
+            </a>
+            <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="galerie_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Galerie</li>
+            </a>
+            <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="frise_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Frise</li>
+            </a>
+            <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="glossaire_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Glossaire</li>
+            </a>
+            <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="autreprojets_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Autre Projet</li>
+            </a>
+            <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="contact_FR.html" class="li__nav__link">
+                <li class="li__nav__design">Contact</li>
+            </a>
+            <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+            <a href="apropos_FR.html" class="li__nav__link">
+                <li class="li__nav__design">À propos</li>
+            </a>
+
+        </ul>
+    </div>
+</nav>
+
+<header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+
+    <nav class="header__menu">
+        <button class="button__header__EN">
+            <a href="#"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
+                    alt="icones de changement de langue en position Francaise"></a>
+        </button>
+
+        <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+            <nav class="button__menu__etat-normalA"></nav>
+            <nav class="button__menu__etat-normalB"></nav>
+        </button>
+    </nav>
+    <main>
+
+        <a href="index.html"><img class="logo__olympe " src="/assets/icones/logoolympe1.svg" alt="logo olympe"></a>
+        <h1 class="title__Galerie">Gallery</h1>
+        <div class="deco__title__galerie"></div>
+
+        <article class="categoriefeministe">
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__precurseurs">The
+                    precursors</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__sportives">The
+                    sportives</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__scientifiques">Scientists and
+                    engineers</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__artistes">The artists</a></button>
+            <div class="margin1"></div>
+            <button class="button__categoriefeministe "><a href="#categoriefeministe__hommes">The men</a></button>
+        </article>
+        <div class="deco__categoriefeministe__galerie"></div>
+        <div class="margin__negative__B"></div>
+
+
+        <a id="categoriefeministe__precurseurs"></a>
+        <h3 class="tweet__titre">Precursors:
+            <h3 class="tweet__description ">Because every movement needs a beginning.</h3>
+
+
+
+            <article>
+                <h2>Christine de Pizan</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Christine_de_Pizan"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(1).webp" alt="Photo de Christine de Pizan" /></a>
+                <p class="description"> Considered as the first woman writer of the French language who lived from her
+                    pen. Christine de Pizan is not considered
+                    as "Feminist" from a modern point of view, in the sense that she does not wish to upset the societal
+                    system considered
+                    patriarchal.
+                    She wrote in 1405 la cité des dames, considered as one of the first feminist works by its engaged
+                    conception, which
+                    establishes the intelligence of a woman by her education and not by birth.
+                </p>
+                <br>
+
+                <h2>Olympe de Gouges</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Olympe_de_Gouges"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(2).webp" alt="Photo de Olympe de Gouges" /></a>
+                <p class="description">Emblem of the French feminist movement of which she will be considered as a
+                    pioneer.
+                    Olympe de Gouges is the author of the declaration of the rights of the woman and the citizen in
+                    which she affirmed the
+                    equality of the civil and political rights of both sexes. She devoted many works to the emancipation
+                    of women from their
+                    husbands, including the play Necessity of Divorce, in which she asked for the introduction of
+                    divorce.
+                    She went to the scaffold with courage and dignity, convinced of her ideas and the advances she
+                    proposed. Before her
+                    execution she declared to the crowd: "Children of the Fatherland you will avenge my death".
+                    She died on November 3, 1793 at the age of 45.
+
+
+                </p>
+                <br>
+
+                <h2>Elizabeth Cady Stanton</h2>
+                <div class="deco__titre__feministe__B"></div>
+                <a href="https://fr.wikipedia.org/wiki/Elizabeth_Cady_Stantonsi"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(3).webp" alt="Photo de Elizabeth Cady Stanton" /></a>
+                <p class="description">The daughter of a judge father, Elizabeth saw early on in his office that the law
+                    favored men over women.
+                    That married women had no income of their own, no property rights, and no right of custody over
+                    their own children.
+                    Exhausted by her nation's indifference to gender inequality, she organized the first women's rights
+                    convention in the
+                    United States in 1848 (the Seneca Falls Convention), making her the leader of the first feminist
+                    wave in the United
+                    States.
+
+                </p>
+                <br>
+
+                <h2>Simone de Beauvoir</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://fr.wikipedia.org/wiki/Simone_de_Beauvoir"><img class="photo__galerie "
+                        src="assets/Img/Rectangle49(4).webp" alt="Photo de Simone de Beauvoir" /></a>
+                <p class="description">A woman of letters from a good Parisian family, Simone de Beauvoir distinguished
+                    herself through her committed writings
+                    such as "Le deuxieme sexe" (1949), making her the figurehead of the second feminist wave, with a
+                    report on the
+                    inferiority of women in society and avenues of reflection through new angles such as anatomy,
+                    religion or historical
+                    myths.
+                    She died in 1986 at the age of 78.
+
+                </p>
+                <br>
+
+            </article>
+
+
+
+            <article>
+                <a id="categoriefeministe__sportives"></a>
+                <h3 class="tweet__titre">The sportswomen:</h3>
+                <h3 class="tweet__description ">Because the progress of ideas also passes by the physical overcoming.
+                </h3>
+            </article>
+
+
+
+            <article>
+                <h2>Megan Rapinoe</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href="https://www.lesinrocks.com/cheek/megan-rapinoe-one-life-feminisme-308378-12-11-2020/"><img
+                        class="photo__galerie " src="assets/Img/Rectangle49(5).webp" alt="Photo de Megan Rapinoe" /></a>
+                <p class="description">Co-captain and World Champion Megan Rapinoe is not afraid to make a name for
+                    herself by taking strong and
+                    well-established positions such as denouncing police violence against black people, the treatment of
+                    minorities by
+                    former President Trump or her contribution to the feminist movement by pointing out the difference
+                    in salaries between
+                    male and female players.
+
+                </p>
+                <br>
+
+                <h2>Clarisse Agbegnenou: </h2>
+                <div class="deco__titre__feministe__B"></div>
+                <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(6).webp"
+                        alt="Photo de Clarisse Agbegnenou" /></a>
+                <p class="description">Deep humanist and great fighter, Clarisse knows that in sport as in society one
+                    does not evolve without having the rage
+                    to win and without committing herself personally in her fights. In 2019 she took on the
+                    responsibility of becoming the
+                    godmother of the association SOS Préma, whose goal is to help children born prematurely to have a
+                    better chance of
+                    growing up properly. In the same year she took the same responsibility in the feminist operation
+                    "Women's Sport" whose
+                    goal is to improve the media coverage of women's sports.
+                </p>
+                <br>
+
+                <h2>Stéphane Pallez</h2>
+                <div class="deco__titre__feministe__A"></div>
+                <a href=""><img class="photo__galerie " src="assets/Img/Rectangle49(7).webp"
+                        alt="Photo de Stéphane Pallez" /></a>
+                <p class="description">
+                    CEO of La Française des Jeux since 2014, Stéphane Pallez also intends to contribute to reducing
+                    inequalities in sports
+                    through her company.
+                    To do this, FDJ has been implementing the "Sport for Women" program since 2016, based on several
+                    pillars: encouraging
+                    women to practice sports, providing financial support to professional sportswomen, participating in
+                    the media coverage
+                    of women's sports, and finally, mobilizing the FDJ network to allow women to access the major sports
+                    body.
+                </p>
+                <br>
+            </article>
+
+
+            <article>
+
+                <a id="categoriefeministe__scientifiques"></a>
+                <h3 class="tweet__titre">Scientists and engineers:</h3>
+        </h3>
+        <h3 class="tweet__description ">Without whom the world would not be as advanced.</h3>
+        </article>
+
+        <article>
+            <h2>Marie Curie</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(8).webp"
+                    alt="Photo de Marie Curie" /></a>
+            <p class="description"> Passionate about science and research, and endowed with an unfailing determination,
+                Marie Curie did not let an
+                exclusively male environment prevent her from advancing in her discoveries. At the university, there
+                were only 23 women
+                for 4000 students but this only motivated her to become a master in this field, as proof she was the
+                first woman to have
+                received the Nobel Prize and, to date, the only woman to have received two. She remains the only person
+                to have been
+                awarded in two distinct scientific fields: physics in 1903, and chemistry in 1911.
+                Her discoveries in the field of radiation and her medical contribution during the Great War made Marie
+                Curie an
+                illustrious heroine of the 20th century.
+                She died in 1934, sick of her discoveries but liberated from her condition as a woman.
+            </p>
+            <br>
+            <h2>Evelyn Fox Keller:</h2>
+            <div class="deco__titre__feministe__A"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(9).webp"
+                    alt="Photo de Evelyn Fox Keller" /></a>
+            <p class="description">Professor of the history and philosophy of science at MIT.
+                Evelyn gives a theoretical view of the consequences of society on the scientific world.
+                In 1985, she published "Reflections on Gender and Science". Her most important contribution is in the
+                field of "science
+                and gender", where she relates through her own experience as a woman the subject of gender in an almost
+                exclusively male
+                universe.
+            </p>
+            <br>
+
+
+            <h2 id="galerie__adalovelace">Ada Lovelace: </h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(10).webp"
+                    alt="Photo de Ada Lovelace" /></a>
+            <p class="description">Since her childhood, Ada has used her overflowing imagination to design many
+                futuristic machines.
+                Passionate about the mysterious and complex world of mathematics, she was convinced that this was the
+                way to build the
+                future.
+                But in 1820, girls were not encouraged to take physics, mathematics or engineering courses because they
+                were not
+                considered intelligent enough. But Ada did not let the prejudices of her time taint her passion.
+                As an adult with a specialized education in mathematics, she became the first person to create a
+                computer program while
+                working on Charles Babbage's analytical machine.
+                She died young, in pain and forgotten by history, but with the serenity of having achieved her dreams.
+
+
+            </p>
+            <br>
+
+            <h2>Valentina Terechkova : </h2>
+            <div class="deco__titre__feministe__B"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(11).webp"
+                    alt="Photo de Valentina Terechkova : " /></a>
+            <p class="description"> Parachutist of excellence and convinced communist, the Russian Valentina Terechkova
+                becomes for the glory of the Soviet
+                Union the first woman to realize a flight in space on June 16, 1963. Alone on board her spacecraft.
+                The results of the mission were rather negative, but for her courage she was rewarded with the two
+                highest awards of the
+                country: the title of Hero of the Soviet Union and the Order of Lenin.
+                She will become a symbol of equality between men and women in the eyes of the world by giving no less
+                than 43
+                conferences abroad and by becoming the representative of the Soviet Union at the International Women's
+                Year in 1975.
+                She will remain the proof that with determination and courage women can also reach the stars.
+
+
+            </p>
+            <br>
+
+        </article>
+
+
+        <article>
+            <a id="categoriefeministe__artistes"></a>
+            <h3 class="tweet__titre">Artists:</h3>
+            <h3 class="tweet__description">Because art is also an excellent means of denunciation.</h3>
+        </article>
+
+
+        <article>
+            <h2>Carolee Schneemann: </h2>
+            <div class="deco__titre__feministe__B"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(12).webp"
+                    alt="Photo de Carolee Schneemann: " /></a>
+            <p class="description">Multidisciplinary artist since the 60s. Carolee Schneemann uses painting,
+                photography, film and performance to challenge
+                the archaic view of the female body, as well as the taboos of sexuality in society. She knows all too
+                well that the art
+                world is dominated by male codes.
+                "You are a fabulous kid, you could go very far, but don't take art too much to heart, you are only a
+                girl".
+                Such were the words of his teacher when he understood the ambitions that nourished his student. But
+                Carolee is insistent
+                and will never let the world she adores exclude her for the sex she carries. She will even go as far as
+                to provoke it by
+                using the female body as a tool of art. She died on March 6, 2019 at 79 years, recognized and rewarded
+                by her
+                convictions and her works.
+
+
+            </p>
+            <br>
+
+            <h2>Miss Tic</h2>
+            <div class="deco__titre__feministe__A3"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(13).webp"
+                    alt="Photo de Miss Tic" /></a>
+            <p class="description">Since 1985, Miss tic is THE feminine and feminist figure of French street art.
+                She uses Parisian neighborhoods as frescoes to represent women at their strongest.
+                A pride, a freedom and a power that she likes to retranscribe through her personal stories.
+                Now 65 years old, Miss tic is still practicing and is even solicited by cities to design urban
+                environments such as the
+                5th line of tramway in Montpellier in 2017
+
+
+            </p>
+            <br>
+
+            <h2>AIKO</h2>
+            <div class="deco__titre__feministe__A4"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(14).webp" alt="Photo de AIKO" /></a>
+            <p class="description">Based in New York City where she has lived and worked since the mid-90s, AIKO is a
+                Japanese street art artist who
+                quickly made a name for herself in the male-dominated world of street art.
+                By collaborating with titans of modern art such as the FAILE collective or Banksy, AIKO has built a
+                reputation far
+                beyond the gates of New York, by putting forward glamorous, powerful and uninhibited women.
+                Helped by the greatest, it is above all thanks to its particular graphic style of mix between American
+                culture and
+                Japanese inspiration, all pronouncing current feminist convictions that AIKO will become an
+                internationally known
+                figure.
+
+            </p>
+            <br>
+
+        </article>
+
+
+
+        <article>
+            <a id="categoriefeministe__hommes"></a>
+            <h3 class="tweet__titre">Men:</h3>
+            <h3 class="tweet__description">Because an equality is never defined alone.</h3>
+        </article>
+
+
+        <article>
+            <h2>Hayao Miyazaki: </h2>
+            <div class="deco__titre__feministe__A"></div>
+            <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki"><img class="photo__galerie "
+                    src="assets/Img/Rectangle49(15).webp" alt="Photo de Hayao Miyazaki:" /></a>
+            <p class="description">In the middle of his zany, poetic and colorful universe. Hayao Miyazaki, the
+                co-founder of Studio Ghibli, to whom we
+                owe, among others, "My Neighbors Totoro" and "Princess Mononoke", to name but a few, also uses his films
+                as a medium to
+                convey current social issues that are important to him, such as ecology and feminism.
+                Studio Ghibli distinguishes itself from other animation studios by the importance it gives to the female
+                character in
+                many of its films.
+                Moreover, it has gone so far as to encourage the hiring of women at the studio while ensuring their
+                professional
+                advancement.
+
+            </p>
+            <br>
+
+            <h2>Kurt Cobain</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(16).webp"
+                    alt="Photo de Kurt Cobain" /></a>
+            <p class="description">From an early age, the legendary guitarist managed to make friends almost exclusively
+                with girls, which would instill in
+                him for the rest of his short life values of respect and special consideration for them.
+                But beyond simple personal values, he will use his music and their media interest to share and educate
+                his audience in
+                the fights that are important to him such as: feminism, harassment, rape and the homosexual cause.
+                He and his wife Courtney Love will even go so far as to give several charity concerts in support of
+                victims of domestic
+                violence, for many young people of the 90's' he and his band will become a cry of revolt and a demand
+                for progress for
+                equality and acceptance.
+                He will join the club of the 27 on April 5, 1994 following a suicide.
+
+            </p>
+            <br>
+
+            <h2>Mark Ruffalo</h2>
+            <div class="deco__titre__feministe__A2"></div>
+            <a href="#"><img class="photo__galerie " src="assets/Img/Rectangle49(17).webp"
+                    alt="Photo de Mark Ruffalo" /></a>
+            <p class="description">For some years now, the actor of Hulk in the cinema, is part of the great voices that
+                dare to denounce the sexism and
+                machismo present in Hollywood and claim to be fully feminist. He admits to regretting the lack of place
+                of women in the
+                cinema and is saddened by the characters that are given to them (often secondary, useless or poorly
+                written for lack of
+                interest).
+                To defend the right to abortion, threatened in many U.S. states, Mark Ruffalo published on the net a
+                very personal and
+                committed letter, in which he recalled that abortion is a right granted in the U.S. Constitution.
+            </p>
+            <br>
+
+        </article>
+
+
+
+        <footer class="footer__space">
+
+            <article class="footer__menu">
+                <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
+                <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres
+                        projets</button>
+                <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
+            </article>
+
+
+            <div class="mentionlegale">
+
+                <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+                <div class="footer__mentionlegale__deco"> </div>
+                <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
+                <p class="footer__texte">pédagogique au département MMI de</p>
+                <p class="footer__texte__bottom"> Montbéliard.</p>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+</html>

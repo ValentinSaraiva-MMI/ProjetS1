@@ -3,8 +3,9 @@ h1 {
     font-size: var(--titre_pages);
     position: relative;
     left: 94px;
-    top: -45px;
-    margin-bottom: -20px;
+    top: -25px;
+    margin-bottom: -10px;
+    width: 50%;
 }
 
 h2 {  font-family: var(--font-main);
@@ -20,7 +21,7 @@ h2 {  font-family: var(--font-main);
 width: 5px;
 height: 30px;
 left:  84px;
-top: -62px;
+top: -50px;
 background: #127098;
 }
 
@@ -134,6 +135,11 @@ width: 135px;
 .deco__words__size7 {
 width: 180px;
 }
+
+.deco__words__size8 {
+width: 200px;
+}
+
 
 .deco__words__size__max{
 width: 100%
