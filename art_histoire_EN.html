@@ -12,20 +12,87 @@
 
 <body>
 
-    <header>
-        <div class="logo__simple">
-            <a href="index.html"><img src="assets/icones/logoolympe1.svg"
-                    alt="Logo simplifié de Olympe, permettant rejoindre l'acceuil"></a>
+    <nav class="no__scroll">
+        <div id="nav__toggle" class="no__scroll">
+
+
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+            <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+                <nav class="button__menu__casseA"></nav>
+                <nav class="button__menu__casseB"></nav>
+            </button>
+
+
+
+            <ul>
+                <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                    src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="index.html" class="li__nav__link">
+                    <li class="li__nav__design">Accueil</li>
+                </a>
+                <div class="li__nav__design__article__decoB"></div>
+                <div class="li__nav__design__article__decoA "></div>
+                <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article"
+                    alt="icone d'acceuil">
+                <a href="art_histoire_EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A history of feminism</li>
+                </a>
+                <a href="art_feministe_EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A feminist of today as a reflection of </li>
+                    <li class="li__nav__design__article"> the past</li>
+                </a>
+                <a href="art_victoire__EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A victory still a long way off</li>
+                </a>
+                <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="galerie_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Gallery</li>
+                </a>
+                <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="frise_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Timeline</li>
+                </a>
+                <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="glossaire_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Glossary</li>
+                </a>
+                <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="autreprojets_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Other Project</li>
+                </a>
+                <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="contact_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Contact</li>
+                </a>
+                <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="apropos_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">About us</li>
+                </a>
+
+            </ul>
         </div>
+    </nav>
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
 
         <nav class="header__menu">
             <button class="button__header__EN">
-                <a href="#"><img src="assets/icones/Langues/EN.svg"
+                <a href="art_feministe_FR.html"><img src="assets/icones/Langues/EN.svg" class="button__anglais"
                         alt="icones de changement de langue en position Francaise"></a>
             </button>
-            <button class="button__header__menu"><a href="menu_deroulant_FR.html"><img src="assets/icones/menu/Menu.svg"
-                        alt="Icone de menu déroulant"></a> </button>
+
+            <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+                <nav class="button__menu__etat-normalA"></nav>
+                <nav class="button__menu__etat-normalB"></nav>
+            </button>
         </nav>
+
+
+
+        <div>
+            <img class="hero__logo" src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="95">
     </header>
 
 
@@ -188,9 +255,9 @@
     <footer class="footer__space">
 
         <article class="footer__menu">
-            <button class="button__footer"><a class="footer__link" href="contact_FR.html">Contact</button>
-            <button class="button__footer"><a class="footer__link" href="autreprojets_FR.html">Autres projets</button>
-            <button class="button__footer"><a class="footer__link" href="apropos_FR.html">À propos</button>
+            <button class="button__footer"><a class="footer__link" href="contact_EN.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_EN.html">Other projects</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_EN.html">About us</button>
         </article>
 
 
@@ -198,9 +265,9 @@
 
             <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
             <div class="footer__mentionlegale__deco"> </div>
-            <p class="footer__texte__top">Projet réalisé dans le cadre d’un exercice </p>
-            <p class="footer__texte">pédagogique au département MMI de</p>
-            <p class="footer__texte__bottom"> Montbéliard.</p>
+            <p class="footer__texte__top">Project carried out as part of an exercise </p>
+            <p class="footer__texte">in the MMI department of</p>
+            <p class="footer__texte__bottom"> Montbeliard.</p>
         </div>
 
     </footer>

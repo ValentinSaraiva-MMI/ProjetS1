@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{actif: false}" :class="actif && 'no__scroll'">
+<!-- Validé W3C  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/component/carrousel.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script scr="https://animejs.com/lib/anime.min.js"></script>
+    <script src="/src/js/carrousel.js"></script>
+    <title>Olympe</title>
+</head>
+
+<body>
+
+    <nav class="no__scroll">
+        <div id="nav__toggle" class="no__scroll">
+
+
+            <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                src="assets/icones/naviguation/olympelogo2.svg" class="li__nav__logo" alt="Logo du site">
+            <button class="button__nav" onclick="document.getElementById('nav__toggle').classList.remove('actif')">
+                <nav class="button__menu__casseA"></nav>
+                <nav class="button__menu__casseB"></nav>
+            </button>
+
+
+
+            <ul>
+                <img onclick="document.getElementById('nav__toggle').classList.remove('actif')"
+                    src="/assets/icones/naviguation/Icon__home.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="index.html" class="li__nav__link">
+                    <li class="li__nav__design">Home</li>
+                </a>
+                <div class="li__nav__design__article__decoB"></div>
+                <div class="li__nav__design__article__decoA "></div>
+                <img src="/assets/icones/naviguation/Iconarticle.svg" class="li__nav__icone__article"
+                    alt="icone d'acceuil">
+                <a href="art_histoire_EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A history of feminism</li>
+                </a>
+                <a href="art_feministe_EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A feminist of today as a reflection of </li>
+                    <li class="li__nav__design__article"> the past</li>
+                </a>
+                <a href="art_victoire__EN.html" class="li__nav__link__article">
+                    <li class="li__nav__design__article">A victory still a long way off</li>
+                </a>
+                <img src="/assets/icones/naviguation/galerie_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="galerie_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Gallery</li>
+                </a>
+                <img src="/assets/icones/naviguation/arrow__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="frise_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Timeline</li>
+                </a>
+                <img src="/assets/icones/naviguation/glossaire__Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="glossaire_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Glossary</li>
+                </a>
+                <img src="/assets/icones/naviguation/AutreProjet_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="autreprojets_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Other Project</li>
+                </a>
+                <img src="/assets/icones/naviguation/mail_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="contact_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">Contact</li>
+                </a>
+                <img src="/assets/icones/naviguation/Info_Icon.svg" class="li__nav__icone" alt="icone d'acceuil">
+                <a href="apropos_EN.html" class="li__nav__link">
+                    <li class="li__nav__design">About us</li>
+                </a>
+
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+
+        <nav class="header__menu">
+            <button class="button__header__EN">
+                <a href="index.html"><img src="assets/icones/Langues/FR.svg" class="button__anglais"
+                        alt="icones de changement de langue en position Francaise"></a>
+            </button>
+
+            <button class="button__nav__2" onclick="document.getElementById('nav__toggle').classList.add('actif')">
+                <nav class="button__menu__etat-normalA"></nav>
+                <nav class="button__menu__etat-normalB"></nav>
+            </button>
+        </nav>
+
+
+
+
+        <img class="hero__logo" src="assets/Img/Titresiteweb.webp" alt="Logo du site" width="195" height="95">
+
+
+
+
+
+
+    </header>
+
+    <div class="hero__tagline">
+        <h3 class="presentation__title"><strong>Evolution of feminism from its beginnings </strong>
+        </h3>
+        <h3 class="presentation__title"><strong> in the digital age</strong></h3>
+    </div>
+
+
+
+    <div class="presentation__intro">
+        <p class="hero__intro">Since the omnipresence of social networks in our society, feminism has built a reputation
+            built a reputation of less and less recommendable. </p>
+        <p class="hero__intro"> But it should be remembered that the movement is only fighting for equality and the
+            creation of a
+            of a more just world
+            for all.</p>
+        <p class="hero__intro">Olympe.com invites you to finally give feminism a chance by discovering how, through
+            around the
+            world and
+            times, women have fought to obtain their legitimate rights.</p>
+    </div>
+
+
+    <div class="presentation__video">
+        <h1 class="presentation__undertitle"> Video</h1>
+        <video controls>
+            <source src="/assets/video/Wintergatan.mp4" type=video/mp4>
+
+        </video>
+    </div>
+    </div>
+
+
+    <div class="presentation__article">
+        <h1 class="presentation__undertitle">Articles</h1>
+
+    </div>
+
+
+
+
+    <div class="carrousel">
+        <ul class="images listUnstyles">
+            <li><a href="art_histoire_EN.html"><img class="img_carrousel"
+                        src="assets/Img/carrousel__EN/HistoireFeminisme__EN.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a>
+            </li>
+            <li><a href="art_feministe_EN.html"><img class="img_carrousel"
+                        src="assets/Img/carrousel__EN/RefletDuPassé_EN.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a></li>
+            <li><a href="art_victoire__EN.html"><img class="img_carrousel"
+                        src="assets/Img/carrousel__EN/VictoireEncoreLointaine__EN.png"
+                        alt="Image du carrousel permettant de rejoindre un article"></a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="pagination carrousel__boutons listUnstyles">
+            <li class="precedente carrousel__bouton"><button type="button">
+                    <p class="carrousel__fleche">←</p>
+                </button></li>
+            <li class="suivante carrousel__bouton"><button type="button">
+                    <p class="carrousel__fleche">→</p>
+                </button></li>
+        </ul>
+    </div>
+
+
+    <script>
+        carrousel();
+    </script>
+
+
+
+
+
+    <!--  
+
+    <section>
+
+
+        <h2> Une histoire du féminisme </h2>
+        <p>De Olympe de Gouge jusqu’à l'ère moderne, découvrez comment le féminisme est devenu un des mouvements les
+            plus suivis de l'Histoire</p>
+        <a href="art_histoire_FR.html"><img src="assets/Img/Rectangle37.webp"
+                alt="Image illustrant le premier article, permet de le rejoindre en cliquant dessus" /></a>
+
+        <h2> Une féministe d’aujourd’hui comme reflet du passé </h2>
+        <p>Mathématicienne de génie et pionnières dans l’âme, découvrez comment à travers le temps, deux femmes se
+            retrouvent liées par l’Histoire d’un mouvement</p>
+        <a href="art_feministe_FR.html"><img src="assets/Img/Rectangle37(1).webp"
+                alt="Image illustrant le deuxieme article" /></a>
+
+
+        <h2> Une victoire encore lointaine </h2>
+        <p>Le constat glaçant d’une journaliste quant à la situation des jeunes filles dans le monde.</p>
+        <a href="art_victoire_FR.html"><img src="assets/Img/Rectangle37(2).webp"
+                alt="Image illustrant le troisiéme article" /></a>
+        </article>
+
+
+    </section>
+
+
+-->
+
+
+
+    <div class="presentation__article">
+        <article>
+            <h1 class="presentation__undertitle">Gallery</h1>
+            <h3 class="presentation__tweet_undertitle ">To discover the pillars of the movement.</h3>
+            <img class="article__arrow_galerie" src="assets/Img/Arrow 2.png"
+                alt="Fleche invitant à cliquer sur l'article">
+            <a href="galerie_EN.html"><img src="assets/Img/Rectangle49.webp"
+                    alt="Photo d'une femme devant une galerie, permettant à l'utilisateur de rejoindre la page galerie" /></a>
+        </article>
+    </div>
+
+    <div class="presentation__article">
+        <article>
+            <h1 class="presentation__undertitle">Timeline</h1>
+            <h3 class="presentation__tweet_undertitle ">Explore the history of feminism through its key dates.
+            </h3>
+            <img class="article__arrow_Frise " src="assets/Img/Arrow 2.png"
+                alt="Fleche invitant à cliquer sur l'article">
+            <a href="frise_EN.html"><img src="assets/Img/Rectangle159.webp"
+                    alt="Photo d'une femme devant une galerie, permettant à l'utilisateur de rejoindre la page galerie"></a>
+    </div>
+
+    </article>
+
+
+    <footer class="footer__space">
+
+        <article class="footer__menu">
+            <button class="button__footer"><a class="footer__link" href="contact_EN.html">Contact</button>
+            <button class="button__footer"><a class="footer__link" href="autreprojets_EN.html">Other projects</button>
+            <button class="button__footer"><a class="footer__link" href="apropos_EN.html">About us</button>
+        </article>
+
+
+        <div class="mentionlegale">
+
+            <img class="footer__img" src="assets/icones/mmilogo.svg" alt="Logo du département MMI de Montbéliard">
+            <div class="footer__mentionlegale__deco"> </div>
+            <p class="footer__texte__top">Project carried out as part of an exercise </p>
+            <p class="footer__texte">in the MMI department of</p>
+            <p class="footer__texte__bottom"> Montbeliard.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

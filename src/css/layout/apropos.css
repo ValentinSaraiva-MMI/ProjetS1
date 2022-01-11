@@ -134,6 +134,19 @@ background: #127098;
 }
 
 
+
+.deco__photo__B__EN {
+    position: absolute;
+height: 43px;
+width: 10px;
+left: 235px;
+top: 643px;
+background: #127098;
+}
+
+
+
+
 .deco__photo__C {
     Width:8px;
     Height:34px;
@@ -143,6 +156,22 @@ background: #127098;
     background: #127098;
     transform: rotate(90deg);
 }
+
+
+
+
+
+
+.deco__photo__C__EN {
+    Width:8px;
+    Height:34px;
+    position: absolute;
+    left: 10.31%;
+    top: 1000px;
+    background: #127098;
+    transform: rotate(90deg);
+}
+
 
 .deco__photo__D {
     Width:8px;
@@ -155,6 +184,17 @@ background: #127098;
 
 
 
+.deco__photo__D__EN{
+    Width:8px;
+    Height:43px;
+    position: absolute;
+    right: 94.21%;
+    bottom: -200.65px;
+    background: #127098;
+}
+
+.deco__logo__linkedin_A__EN,
+.deco__logo__linkedin_B__EN,
 .deco__logo__linkedin_A,
 .deco__logo__linkedin_B{
     z-index: -1;
@@ -177,6 +217,22 @@ left: 265px;
 top: 1049px;
 }
 
+.deco__logo__linkedin_A__EN{
+position: absolute;
+left: 273px;
+z-index: -1;
+top: 1000px;    
+}
+
+.deco__logo__linkedin_B__EN{
+position: absolute;
+left: 265px;
+top: 1029px;
+
+}
+
+
+
 .arrow__apropos {
 position: absolute;
 width: 37.2px;
@@ -185,6 +241,17 @@ left: 210.88px;
 top: 1025.11px;
 transform: rotate(110.66deg);
 }
+
+
+.arrow__apropos__EN{
+position: absolute;
+width: 37.2px;
+height: 43px;
+left: 210.88px;
+top: 1005.11px;
+transform: rotate(110.66deg);
+}
+
 
 .arrow__contact {
     position: relative;

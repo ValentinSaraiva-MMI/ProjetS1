@@ -26,12 +26,35 @@ top: -198px;
 background: #127098;
 }
 
+
+
+.deco__title__AP__EN {
+    position: relative;
+width: 5px;
+height: 30px;
+left: 57px;
+top: -211px;
+background: #127098;
+}
+
+
 .deco__title__BP {
 position: relative;
 width: 4px;
 height: 14px;
 left: 325px;
 top: -205px;
+background: #127098;
+}
+
+
+
+.deco__title__BP__EN {
+position: relative;
+width: 4px;
+height: 14px;
+left: 329px;
+top: -235px;
 background: #127098;
 }
 
@@ -42,6 +65,20 @@ width: 4px;
 height: 14px;
 left: 318px;
 top: -214px;
+
+background: #127098;
+transform: rotate(-90deg);
+}
+
+
+
+.deco__title__CP__EN {
+
+position: relative;
+width: 4px;
+height: 14px;
+left: 318px;
+top: -230px;
 
 background: #127098;
 transform: rotate(-90deg);
